@@ -10,10 +10,10 @@ export class Card {
   section; //string
   url; //string
 
-  favorite = false; //boolean
-  read = false; //boolean
+  isFavorite; //boolean
+  isRead; //boolean
 
-  constructor(
+  constructor({
     id,
     category,
     title,
@@ -22,9 +22,9 @@ export class Card {
     imageAlt,
     section,
     url,
-    favorite,
-    read
-  ) {
+    isFavorite = false,
+    isRead = false,
+  }) {
     this.id = id;
     this.category = category;
     this.title = title;
@@ -33,45 +33,45 @@ export class Card {
     this.imageAlt = imageAlt;
     this.section = section;
     this.url = url;
-    this.favorite = favorite;
-    this.read = read;
+    this.isFavorite = isFavorite;
+    this.isRead = isRead;
   }
 
-  get favorite() {
-    return this.favorite;
+  get isFavorite() {
+    return this.isFavorite;
   }
 
-  set favorite(boolean) {
-    if (!!boolean === boolean) return (this.favorite = boolean);
-    console.log(`"favorite" value "${boolean}" is not boolean!`);
+  set isFavorite(boolean) {
+    if (!!boolean === boolean) return (this.isFavorite = boolean);
+    console.log(`"isFavorite" value "${boolean}" is not boolean!`);
   }
 
-  get read() {
-    return this.read;
+  get isRead() {
+    return this.isRead;
   }
 
-  set read(boolean) {
-    if (!!boolean === boolean) return (this.read = boolean);
-    console.log(`"read" value "${boolean}" is not boolean!`);
+  set isRead(boolean) {
+    if (!!boolean === boolean) return (this.isRead = boolean);
+    console.log(`"isRead" value "${boolean}" is not boolean!`);
   }
 
   createCardItem(containerClass = 'list') {
-    const alreadyRead = this.read
+    const alReadyRead = this.isRead
       ? `<span class='${containerClass}__read'>Already read</span>`
       : `<span class='${containerClass}__read ${containerClass}__read--false'>Already read</span>`;
 
-    const addToFavorite = this.favorite
-      ? `<span class='${containerClass}__favorite'>Add to favorite</span>`
-      : `<span class='${containerClass}__favorite ${containerClass}__favorite--false'>Add to favorite</span>`;
+    const addToFavorite = this.isFavorite
+      ? `<span class='${containerClass}__favorite'>Add to Favorite</span>`
+      : `<span class='${containerClass}__favorite ${containerClass}__favorite--false'>Add to Favorite</span>`;
 
     return `
     <li id=${this.id} class='${containerClass}__item'>
         <span class='${containerClass}__category'>${this.category}</span>
-        ${alreadyRead}
+        ${alReadyRead}
         <img class='${containerClass}__img' src="${this.imageUrl}" 
             alt="${this.imageAlt ?? this.abstract}">
         ${addToFavorite}
-        <h2 class='${containerClass}__title'>${this.title}<h2>
+        <h2 class='${containerClass}__title'>${this.title}</h2>
         <p class='${containerClass}__abstract'>${this.abstract}</p>
         <a class='${containerClass}__read' href="${this.url}">Read more</a>
     </li>`;
