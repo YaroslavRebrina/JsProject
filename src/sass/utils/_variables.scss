@@ -14,4 +14,12 @@
   --switch-off-color: #5f6775;
   --switch-on-color: #4b48db;
   --switch-inner-color: #4b48db;
+
+  // fonts
+  --font-family-main: 'Manrope';
+  --font-family-secondary: 'Poppins';
+  --font-family-accent: 'Roboto';
 }
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
