@@ -29,7 +29,7 @@ function favoriteMarkup(callback) {
   const items = callback;
 
   let markup = items.map(favoriteItemMarkup).join('');
-  listRef.insertAdjacentHTML = markup;
+  listRef.innerHTML = markup;
 }
 
 favoriteMarkup(getFavorites());
