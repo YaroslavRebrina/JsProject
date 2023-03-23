@@ -1,35 +1,52 @@
-import { FAVORITE_KEY } from './constants';
-import favoriteItemMarkup from '../templates/favorites.hbs';
+import { FAVORITE_KEY, FAVORITE_TOTAL } from './constants';
 
 const refs = {
   listRef: document.querySelector('.favorite__list'),
 };
-
 const { listRef } = refs;
 
-localStorage.setItem(
-  FAVORITE_KEY,
-  JSON.stringify([
-    {
-      img: 'src',
-      title: 'title',
-      text: 'text',
-      date: 'date',
-      linl: 'link',
-    },
-  ])
-);
+let favouriteNews = localStorage.getItem(FAVORITE_KEY) || [];
+let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
+
+favoriteMarkup(getFavorites());
+
+// functions
+
+//add event listener to butt
+function addToFavourites(evt) {
+  evt.target.dataset.id = colletionTotal + 1;
+  evt.target.dataset.favorite = evt.target.innerHTML;
+  colletionTotal += 1;
+
+  favouriteNews.push(evt.target.dataset.favorite);
+  localStorage.setItem(FAVORITE_KEY, favouriteNews);
+  localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
+}
+
+function removeFavourite(evt) {
+  favouriteNews = favouriteNews.filter(
+    item => !item.include(evt.target.dataset.id)
+  );
+  localStorage.setItem(favouriteNews);
+  return favoriteMarkup(getFavorites());
+}
+
+//auto markup
 
 function getFavorites() {
-  const favoriteItems = localStorage.getItem(FAVORITE_KEY);
-  return JSON.parse(favoriteItems);
+  try {
+    // const favoriteItems = localStorage.getItem(FAVORITE_KEY);
+    return JSON.parse(favouriteNews);
+  } catch (e) {
+    console.log(console.log(e));
+  }
 }
 
 function favoriteMarkup(callback) {
   const items = callback;
 
-  let markup = items.map(favoriteItemMarkup).join('');
+  const markup = items.join('');
   listRef.innerHTML = markup;
 }
 
-favoriteMarkup(getFavorites());
+//closest or stop paitaintion if target `li`
