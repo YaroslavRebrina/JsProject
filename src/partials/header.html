@@ -37,7 +37,16 @@
           >
         </li>
       </ul>
-      <input
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          placeholder="Search"
+          autocomplete="off"
+        />
+        <button class="submit" type="submit">Search</button>
+      </form>
+      <!-- <input
         class="header-input"
         type="text"
         name="Search"
@@ -45,7 +54,7 @@
       />
       <svg class="header-input__icon">
         <use href="./fonts/images/icons.svg#icon-search"></use>
-      </svg>
+      </svg> -->
     </nav>
   </div>
   <ul class="header-checkbox-list">
