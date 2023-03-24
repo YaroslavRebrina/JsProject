@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    align-items: baseline;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-nav__logo-link {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+
+    color: var(--light-theme-text-color);
+}
+
+.header-nav__link {
+    font-family: 'Manrope';
+    font-style: normal;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: var(--light-theme-text-color);
+}
+
+.header-nav__link:hover {
+    border-bottom: 1px solid var(--main-color-blue);
+}
+
+.header-nav {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    text-decoration: none;
+    align-items: baseline;
+}
+
+.header-input {
+    position: relative;
+    width: 288px;
+    height: 31px;
+    padding: 5.31px 189px 4.43px 48px;
+    border: 1px solid var(--light-theme-text-color);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav__list {
+    padding: 0;
+    margin-left: 102px;
+    margin-right: 147px;
+    display: flex;
+    gap: 69px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-input__icon {
+    position: absolute;
+}
+
+// Cheakbox
+
+.switch {
+    margin-left: auto;
+    position: relative;
+    display: flex;
+   
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--switch-on-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--switch-on-color);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    border-color: white;
+}
+
+svg {
+    width: 21px;
+    height: 21px;
+    fill: var(--switch-on-color);
+}
+
+// Cheakbox
+
+
+.header-checkbox-list {
+    display: flex;
+    list-style: none;
+}
+
