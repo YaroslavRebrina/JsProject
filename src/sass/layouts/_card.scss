@@ -1,0 +1,138 @@
+/*MStartsev*/
+
+.card {
+  display: block;
+  width: 288px;
+  text-decoration: none;
+  color: #5a6a7d;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(10, 5, 20, 0.06),
+    1px 5px 6px rgba(12, 7, 27, 0.16);
+  transition: all 0.25s;
+
+  &__container {
+    position: relative;
+    width: 288px;
+    height: 395px;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    width: 288px;
+    height: 395px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__already {
+    position: absolute;
+    left: 167px;
+    top: 14px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 35;
+    color: #00dd73;
+
+    &--false {
+      display: none;
+    }
+  }
+
+  &__category {
+    position: absolute;
+    width: 112px;
+    height: 24px;
+    left: 0px;
+    top: 40px;
+    padding: 4px 8px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+
+    background: rgba(68, 64, 247, 0.7);
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  &__favorite {
+    position: absolute;
+    right: 8px;
+    top: 355px;
+    padding: 6px 12px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #111321;
+
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: #111321;
+  }
+
+  &__abstract {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #111321;
+
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__date {
+    margin-right: 145px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #a8a8a8;
+  }
+
+  &__read {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4440f7;
+    text-decoration: none;
+  }
+}
+
+.favorite {
+  &__text {
+    &--false {
+      display: none;
+    }
+  }
+}

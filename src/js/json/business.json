@@ -1,0 +1,1385 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+    "num_results": 500,
+    "results": [
+        {
+            "slug_name": "22fox-dominion",
+            "section": "Business",
+            "subsection": "Media",
+            "title": "Fox Argues Top Executives Weren’t Involved in Voter Fraud Broadcasts",
+            "abstract": "Lawyers for the company, which faces a $1.6 billion defamation lawsuit, are pushing for a judge to rule in their favor before a trial.",
+            "uri": "nyt://article/da4feedd-c9b1-5ad1-9b38-9586db7d6733",
+            "url": "https://www.nytimes.com/2023/03/22/business/media/fox-executives-dominion.html",
+            "byline": "BY KATIE ROBERTSON",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22FOX-DOMINION-hearing-1-pwjc/22FOX-DOMINION-hearing-1-pwjc-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T18:44:15-04:00",
+            "created_date": "2023-03-22T18:00:40-04:00",
+            "published_date": "2023-03-22T18:00:40-04:00",
+            "first_published_date": "2023-03-22T18:00:40-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Television",
+                "News and News Media",
+                "Libel and Slander",
+                "Suits and Litigation (Civil)",
+                "Decisions and Verdicts"
+            ],
+            "org_facet": [
+                "Dominion Voting Systems Corp",
+                "Fox Corporation",
+                "Fox News Channel"
+            ],
+            "per_facet": [
+                "Bartiromo, Maria",
+                "Carlson, Tucker",
+                "Davis, Eric M",
+                "Grossberg, Abby",
+                "Murdoch, Rupert"
+            ],
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22FOX-DOMINION-hearing-1-pwjc/22FOX-DOMINION-hearing-1-pwjc-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Fox Corporation legal team after a two-day pretrial hearing in Dominion Voting Systems’ defamation suit in Wilmington, Del.",
+                    "copyright": "Hannah Beier for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22FOX-DOMINION-hearing-1-pwjc/22FOX-DOMINION-hearing-1-pwjc-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Fox Corporation legal team after a two-day pretrial hearing in Dominion Voting Systems’ defamation suit in Wilmington, Del.",
+                    "copyright": "Hannah Beier for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22FOX-DOMINION-hearing-1-pwjc/22FOX-DOMINION-hearing-1-pwjc-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Fox Corporation legal team after a two-day pretrial hearing in Dominion Voting Systems’ defamation suit in Wilmington, Del.",
+                    "copyright": "Hannah Beier for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22FOX-DOMINION-hearing-1-pwjc/22FOX-DOMINION-hearing-1-pwjc-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Fox Corporation legal team after a two-day pretrial hearing in Dominion Voting Systems’ defamation suit in Wilmington, Del.",
+                    "copyright": "Hannah Beier for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22vid-fed-interest-rate",
+            "section": "Business",
+            "subsection": "Economy",
+            "title": "Fed Raises Interest Rates a Quarter of a Point",
+            "abstract": "Jerome H. Powell said that the Federal Reserve raised interest rates to combat inflation amid turmoil in the banking system.",
+            "uri": "nyt://video/5371fdee-c602-5b82-b0fe-43578f063968",
+            "url": "https://www.nytimes.com/video/business/economy/100000008825373/interest-rates-banks-fed.html",
+            "byline": "BY THE NEW YORK TIMES",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-header-3pm/22fed-live-header-3pm-thumbStandard.jpg",
+            "item_type": "Video",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:05:39-04:00",
+            "created_date": "2023-03-22T16:05:39-04:00",
+            "published_date": "2023-03-22T16:05:39-04:00",
+            "first_published_date": "2023-03-22T16:05:39-04:00",
+            "material_type_facet": "Video",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Banking and Financial Institutions",
+                "Interest Rates",
+                "Inflation (Economics)",
+                "United States Economy",
+                "Government Bonds"
+            ],
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": [
+                {
+                    "suggested_link_text": "Here’s what to know about the Fed’s decision.",
+                    "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/heres-what-you-should-know-about-a-pivotal-fed-meeting"
+                }
+            ],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-header-3pm/22fed-live-header-3pm-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "T.J. Kirkpatrick for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-header-3pm/22fed-live-header-3pm-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "T.J. Kirkpatrick for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-header-3pm/22fed-live-header-3pm-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "T.J. Kirkpatrick for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-header-3pm/22fed-live-header-3pm-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "T.J. Kirkpatrick for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-takeaways",
+            "section": "Business",
+            "subsection": "",
+            "title": "Seven takeaways from a big day for the Fed.",
+            "abstract": "By raising interest rates a quarter-point, the Federal Reserve signaled that it was continuing to fight inflation, but it was holding off an aggressive move that might spook investors.",
+            "uri": "nyt://article/992af9ac-43d1-57f8-b79e-b0ac2563bb2e",
+            "url": "https://www.nytimes.com/2023/03/22/business/fed-powell-takeaways.html",
+            "byline": "BY JEANNA SMIALEK",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:45:02-04:00",
+            "created_date": "2023-03-22T15:41:45-04:00",
+            "published_date": "2023-03-22T15:41:45-04:00",
+            "first_published_date": "2023-03-22T15:41:45-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Inflation (Economics)",
+                "Interest Rates"
+            ],
+            "org_facet": [
+                "Federal Reserve System"
+            ],
+            "per_facet": [
+                "Powell, Jerome H"
+            ],
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": null
+        },
+        {
+            "slug_name": "22xp-faa",
+            "section": "Business",
+            "subsection": "",
+            "title": "F.A.A. Issues Safety Alert After Runway Near Misses",
+            "abstract": "After a series of high-profile episodes at major airports, the Federal Aviation Administration has taken steps in recent months to address airport safety.",
+            "uri": "nyt://article/812b6b78-3df3-5108-bc59-20037a67ad36",
+            "url": "https://www.nytimes.com/2023/03/22/business/faa-airlines-near-misses.html",
+            "byline": "BY AMANDA HOLPUCH",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22xp-faa-01-hjvz/22xp-faa-01-hjvz-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T14:52:47-04:00",
+            "created_date": "2023-03-22T14:52:47-04:00",
+            "published_date": "2023-03-22T14:52:47-04:00",
+            "first_published_date": "2023-03-22T14:52:47-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Airlines and Airplanes",
+                "Airports",
+                "Aviation Accidents, Safety and Disasters",
+                "Air Traffic Control",
+                "Organized Labor"
+            ],
+            "org_facet": [
+                "American Airlines",
+                "Austin-Bergstrom International Airport (Tex)",
+                "Federal Aviation Administration",
+                "Delta Air Lines Inc",
+                "Fedex Corporation",
+                "JetBlue Airways Corporation",
+                "National Transportation Safety Board",
+                "Logan International Airport (Boston, Mass)",
+                "United Airlines"
+            ],
+            "per_facet": [
+                "Nolen, Billy"
+            ],
+            "geo_facet": [
+                "Honolulu (Hawaii)",
+                "Hawaii",
+                "United States",
+                "Texas"
+            ],
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22xp-faa-01-hjvz/22xp-faa-01-hjvz-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An American Airlines jet at Kennedy International Airport. A Delta plane aborted its takeoff there in January after an American crossed about 1,000 feet in front of it.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22xp-faa-01-hjvz/22xp-faa-01-hjvz-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An American Airlines jet at Kennedy International Airport. A Delta plane aborted its takeoff there in January after an American crossed about 1,000 feet in front of it.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22xp-faa-01-hjvz/22xp-faa-01-hjvz-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An American Airlines jet at Kennedy International Airport. A Delta plane aborted its takeoff there in January after an American crossed about 1,000 feet in front of it.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22xp-faa-01-hjvz/22xp-faa-01-hjvz-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An American Airlines jet at Kennedy International Airport. A Delta plane aborted its takeoff there in January after an American crossed about 1,000 feet in front of it.",
+                    "copyright": "Gabby Jones for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22germany-efuels",
+            "section": "Business",
+            "subsection": "",
+            "title": "Germany Pushes for Exception in Law Banning Combustion Engines",
+            "abstract": "Berlin and Brussels are scrambling for a solution after Germany calls for allowing cars to run on synthetic fuels. The move could endanger the E.U.’s climate goals.",
+            "uri": "nyt://article/26535aea-639e-5812-8e68-b65af2783cbb",
+            "url": "https://www.nytimes.com/2023/03/22/business/germany-eu-climate-combustion-engines.html",
+            "byline": "BY MELISSA EDDY AND ERIKA SOLOMON",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22germany-efuels-01-pcfq/22germany-efuels-01-pcfq-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:07:58-04:00",
+            "created_date": "2023-03-22T14:52:36-04:00",
+            "published_date": "2023-03-22T14:52:36-04:00",
+            "first_published_date": "2023-03-22T14:52:36-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Politics and Government",
+                "Automobiles",
+                "Electric and Hybrid Vehicles",
+                "Engines",
+                "Carbon Dioxide",
+                "Fuel Emissions (Transportation)"
+            ],
+            "org_facet": [
+                "European Union",
+                "European Commission",
+                "Porsche AG",
+                "Volkswagen AG"
+            ],
+            "per_facet": null,
+            "geo_facet": [
+                "Germany"
+            ],
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22germany-efuels-01-pcfq/22germany-efuels-01-pcfq-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An installation in Berlin by Greenpeace activists protests the German government’s support for an exception to the European Union’s proposed ban on internal combustion engines in 2035.",
+                    "copyright": "Maja Hitij/Getty Images"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22germany-efuels-01-pcfq/22germany-efuels-01-pcfq-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An installation in Berlin by Greenpeace activists protests the German government’s support for an exception to the European Union’s proposed ban on internal combustion engines in 2035.",
+                    "copyright": "Maja Hitij/Getty Images"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22germany-efuels-01-pcfq/22germany-efuels-01-pcfq-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An installation in Berlin by Greenpeace activists protests the German government’s support for an exception to the European Union’s proposed ban on internal combustion engines in 2035.",
+                    "copyright": "Maja Hitij/Getty Images"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22germany-efuels-01-pcfq/22germany-efuels-01-pcfq-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "An installation in Berlin by Greenpeace activists protests the German government’s support for an exception to the European Union’s proposed ban on internal combustion engines in 2035.",
+                    "copyright": "Maja Hitij/Getty Images"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-version-deposit-insurance",
+            "section": "Business",
+            "subsection": "",
+            "title": "On Capitol Hill, the call for the F.D.I.C. to insure more deposits heats up.",
+            "abstract": "",
+            "uri": "nyt://article/dbedb90e-3e14-510d-85be-341f457992d5",
+            "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/on-capitol-hill-the-call-for-the-fdic-to-insure-more-deposits-heats-up",
+            "byline": "BY JEANNA SMIALEK",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-deposit-insurance-zhmw/22fed-live-blog-version-deposit-insurance-zhmw-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T13:00:05-04:00",
+            "created_date": "2023-03-22T13:00:05-04:00",
+            "published_date": "2023-03-22T13:00:05-04:00",
+            "first_published_date": "2023-03-22T13:00:05-04:00",
+            "material_type_facet": "Live Blog Post",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": null,
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-deposit-insurance-zhmw/22fed-live-blog-version-deposit-insurance-zhmw-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Federal government insures bank deposits up to $250,000.",
+                    "copyright": "Aaron Wojack for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-deposit-insurance-zhmw/22fed-live-blog-version-deposit-insurance-zhmw-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Federal government insures bank deposits up to $250,000.",
+                    "copyright": "Aaron Wojack for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-deposit-insurance-zhmw/22fed-live-blog-version-deposit-insurance-zhmw-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Federal government insures bank deposits up to $250,000.",
+                    "copyright": "Aaron Wojack for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-deposit-insurance-zhmw/22fed-live-blog-version-deposit-insurance-zhmw-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The Federal government insures bank deposits up to $250,000.",
+                    "copyright": "Aaron Wojack for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-version-svb",
+            "section": "Business",
+            "subsection": "",
+            "title": "The collapse of Silicon Valley Bank puts the Fed under scrutiny.",
+            "abstract": "",
+            "uri": "nyt://article/673d9998-e092-500b-8b82-47748270878c",
+            "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/the-collapse-of-silicon-valley-bank-puts-the-fed-under-scrutiny",
+            "byline": "BY JEANNA SMIALEK",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-svb-hpmv/22fed-live-blog-version-svb-hpmv-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T12:15:04-04:00",
+            "created_date": "2023-03-22T12:15:04-04:00",
+            "published_date": "2023-03-22T12:15:04-04:00",
+            "first_published_date": "2023-03-22T12:15:04-04:00",
+            "material_type_facet": "Live Blog Post",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": null,
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-svb-hpmv/22fed-live-blog-version-svb-hpmv-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Silicon Valley Bank risky practices were on the Federal Reserves radar for more than a year.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-svb-hpmv/22fed-live-blog-version-svb-hpmv-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Silicon Valley Bank risky practices were on the Federal Reserves radar for more than a year.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-svb-hpmv/22fed-live-blog-version-svb-hpmv-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Silicon Valley Bank risky practices were on the Federal Reserves radar for more than a year.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-svb-hpmv/22fed-live-blog-version-svb-hpmv-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Silicon Valley Bank risky practices were on the Federal Reserves radar for more than a year.",
+                    "copyright": "Jason Henry for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-version-oversight",
+            "section": "Business",
+            "subsection": "",
+            "title": "Jerome Powell is likely to be grilled over Silicon Valley Bank’s demise.",
+            "abstract": "",
+            "uri": "nyt://article/39a9dd5c-6f4b-5224-8a5c-47b2c8008d52",
+            "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/jerome-powell-is-likely-to-be-grilled-over-silicon-valley-banks-demise",
+            "byline": "BY JEANNA SMIALEK",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-oversight-powell-qfmw/22fed-live-blog-version-oversight-powell-qfmw-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T11:30:04-04:00",
+            "created_date": "2023-03-22T11:30:04-04:00",
+            "published_date": "2023-03-22T11:30:04-04:00",
+            "first_published_date": "2023-03-22T11:30:04-04:00",
+            "material_type_facet": "Live Blog Post",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": null,
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-oversight-powell-qfmw/22fed-live-blog-version-oversight-powell-qfmw-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Jerome Powell, Chairman of the Federal Reserve, will be questioned about the failure of Silicon Valley Bank.",
+                    "copyright": "Haiyun Jiang/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-oversight-powell-qfmw/22fed-live-blog-version-oversight-powell-qfmw-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Jerome Powell, Chairman of the Federal Reserve, will be questioned about the failure of Silicon Valley Bank.",
+                    "copyright": "Haiyun Jiang/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-oversight-powell-qfmw/22fed-live-blog-version-oversight-powell-qfmw-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Jerome Powell, Chairman of the Federal Reserve, will be questioned about the failure of Silicon Valley Bank.",
+                    "copyright": "Haiyun Jiang/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-live-blog-version-oversight-powell-qfmw/22fed-live-blog-version-oversight-powell-qfmw-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Jerome Powell, Chairman of the Federal Reserve, will be questioned about the failure of Silicon Valley Bank.",
+                    "copyright": "Haiyun Jiang/The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-consumer",
+            "section": "Business",
+            "subsection": "",
+            "title": "What Fed Rate Increases Mean for Mortgages, Credit Cards and More",
+            "abstract": "Savers will benefit and borrowers can expect to pay more on credit cards, student loans and other forms of debt.",
+            "uri": "nyt://article/2dfe9a3e-f625-5a59-86e7-05c1666cba28",
+            "url": "https://www.nytimes.com/2023/03/22/business/fed-rates-mortgages-cards-savings.html",
+            "byline": "BY TARA SIEGEL BERNARD",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-blog-consumer-bglh/22fed-blog-consumer-bglh-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T14:10:26-04:00",
+            "created_date": "2023-03-22T11:08:24-04:00",
+            "published_date": "2023-03-22T11:08:24-04:00",
+            "first_published_date": "2023-03-22T11:08:24-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Interest Rates",
+                "Personal Finances",
+                "Mortgages",
+                "Credit Cards",
+                "Student Loans",
+                "Savings"
+            ],
+            "org_facet": [
+                "Federal Reserve System"
+            ],
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-blog-consumer-bglh/22fed-blog-consumer-bglh-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Credit card rates are closely linked to the Fed’s actions.",
+                    "copyright": "Hiroko Masuike/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-blog-consumer-bglh/22fed-blog-consumer-bglh-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Credit card rates are closely linked to the Fed’s actions.",
+                    "copyright": "Hiroko Masuike/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-blog-consumer-bglh/22fed-blog-consumer-bglh-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Credit card rates are closely linked to the Fed’s actions.",
+                    "copyright": "Hiroko Masuike/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-blog-consumer-bglh/22fed-blog-consumer-bglh-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Credit card rates are closely linked to the Fed’s actions.",
+                    "copyright": "Hiroko Masuike/The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-financial-conditions",
+            "section": "Business",
+            "subsection": "",
+            "title": "How the Banking Crisis Has Had the Same Effect as a Fed Rate Increase",
+            "abstract": "Some analysts say that the banking industry tumult has slowed the economy as banks pull back on lending.",
+            "uri": "nyt://article/6a4a2853-ded5-5147-906d-250e696a881d",
+            "url": "https://www.nytimes.com/2023/03/22/business/banking-crisis-interest-rates-lending.html",
+            "byline": "BY JOE RENNISON",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-conditions-promo-fvql/22fed-conditions-promo-fvql-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T15:01:42-04:00",
+            "created_date": "2023-03-22T11:08:24-04:00",
+            "published_date": "2023-03-22T11:08:24-04:00",
+            "first_published_date": "2023-03-22T11:08:24-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Banking and Financial Institutions",
+                "Interest Rates",
+                "United States Economy",
+                "Inflation (Economics)",
+                "Prices (Fares, Fees and Rates)"
+            ],
+            "org_facet": [
+                "Federal Reserve System"
+            ],
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-conditions-promo-fvql/22fed-conditions-promo-fvql-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The collapse of Silicon Valley Bank sent shock waves throughout the global banking industry.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-conditions-promo-fvql/22fed-conditions-promo-fvql-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The collapse of Silicon Valley Bank sent shock waves throughout the global banking industry.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-conditions-promo-fvql/22fed-conditions-promo-fvql-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The collapse of Silicon Valley Bank sent shock waves throughout the global banking industry.",
+                    "copyright": "Jason Henry for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22fed-conditions-promo-fvql/22fed-conditions-promo-fvql-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "The collapse of Silicon Valley Bank sent shock waves throughout the global banking industry.",
+                    "copyright": "Jason Henry for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-banks-interest-rates",
+            "section": "Business",
+            "subsection": "",
+            "title": "Why the banking turmoil has complicated rate increases.",
+            "abstract": "",
+            "uri": "nyt://article/f3aa9c03-31dd-5658-8131-ebd246de75ce",
+            "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/why-the-banking-turmoil-has-complicated-rate-increases",
+            "byline": "BY CHRISTINE ZHANG",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/17/business/why-people-are-worried-about-banks-promo/why-people-are-worried-about-banks-promo-thumbStandard-v2.png",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T11:08:21-04:00",
+            "created_date": "2023-03-22T11:08:21-04:00",
+            "published_date": "2023-03-22T11:08:21-04:00",
+            "first_published_date": "2023-03-22T11:08:21-04:00",
+            "material_type_facet": "Live Blog Post",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": null,
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/business/why-people-are-worried-about-banks-promo/why-people-are-worried-about-banks-promo-thumbStandard-v2.png",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Karl Russell/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/business/why-people-are-worried-about-banks-promo/why-people-are-worried-about-banks-promo-mediumThreeByTwo210-v2.png",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Karl Russell/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/business/why-people-are-worried-about-banks-promo/why-people-are-worried-about-banks-promo-mediumThreeByTwo440-v2.png",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Karl Russell/The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/business/why-people-are-worried-about-banks-promo/why-people-are-worried-about-banks-promo-articleInline-v2.png",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": "Karl Russell/The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "22fed-live-blog-pinned",
+            "section": "Business",
+            "subsection": "",
+            "title": "Here’s what to know about the Fed’s decision.",
+            "abstract": "",
+            "uri": "nyt://article/a3e82621-58f1-504a-b7fa-ab27d91ad361",
+            "url": "https://www.nytimes.com/live/2023/03/22/business/fed-interest-rates/heres-what-you-should-know-about-a-pivotal-fed-meeting",
+            "byline": "BY JEANNA SMIALEK, JIM TANKERSLEY AND JOE RENNISON",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:12:09-04:00",
+            "created_date": "2023-03-22T11:08:21-04:00",
+            "published_date": "2023-03-22T11:08:21-04:00",
+            "first_published_date": "2023-03-22T11:08:21-04:00",
+            "material_type_facet": "Live Blog Post",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": null,
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": null
+        },
+        {
+            "slug_name": "22pacwest",
+            "section": "Business",
+            "subsection": "",
+            "title": "PacWest Bank Taps Credit Lines After 20% Drop in Deposits",
+            "abstract": "The Los Angeles lender, which has come under scrutiny amid worries about midsize banks, said withdrawals had “stabilized.” It also expressed confidence in its ability to raise cash.",
+            "uri": "nyt://article/d8d36040-cd1d-5716-bb89-de3b1d7e37bc",
+            "url": "https://www.nytimes.com/2023/03/22/business/pacwest-bank-credit.html",
+            "byline": "BY LAUREN HIRSCH",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22pacwest-vpqm/22pacwest-vpqm-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:18:21-04:00",
+            "created_date": "2023-03-22T11:00:16-04:00",
+            "published_date": "2023-03-22T11:00:16-04:00",
+            "first_published_date": "2023-03-22T11:00:16-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Banking and Financial Institutions",
+                "Credit and Debt"
+            ],
+            "org_facet": [
+                "PacWest Bancorp"
+            ],
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22pacwest-vpqm/22pacwest-vpqm-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Pacific Western Bank said it had raised more than $1 billion through the investment firm Atlas SP Partners.",
+                    "copyright": "Eric Thayer/Bloomberg"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22pacwest-vpqm/22pacwest-vpqm-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Pacific Western Bank said it had raised more than $1 billion through the investment firm Atlas SP Partners.",
+                    "copyright": "Eric Thayer/Bloomberg"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22pacwest-vpqm/22pacwest-vpqm-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Pacific Western Bank said it had raised more than $1 billion through the investment firm Atlas SP Partners.",
+                    "copyright": "Eric Thayer/Bloomberg"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22pacwest-vpqm/22pacwest-vpqm-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Pacific Western Bank said it had raised more than $1 billion through the investment firm Atlas SP Partners.",
+                    "copyright": "Eric Thayer/Bloomberg"
+                }
+            ]
+        },
+        {
+            "slug_name": "22db-newsletter-web",
+            "section": "Business",
+            "subsection": "DealBook",
+            "title": "Credit Suisse’s Investment Bank Is Slowly Disappearing",
+            "abstract": "UBS is weighing whether and how to end a deal that would have preserved most of its rival’s investment bank, as part of its takeover of the ailing Swiss lender.",
+            "uri": "nyt://article/a29a310d-0abd-5f5a-891d-529e8cf81875",
+            "url": "https://www.nytimes.com/2023/03/22/business/dealbook/credit-suisses-investment-bank.html",
+            "byline": "BY ANDREW ROSS SORKIN, RAVI MATTU, BERNHARD WARNER, SARAH KESSLER, MICHAEL J. DE LA MERCED, LAUREN HIRSCH AND EPHRAT LIVNI",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22db-newsletter-creditsuisse-gpjh/22db-newsletter-creditsuisse-gpjh-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T07:47:57-04:00",
+            "created_date": "2023-03-22T07:47:57-04:00",
+            "published_date": "2023-03-22T07:47:57-04:00",
+            "first_published_date": "2023-03-22T07:47:57-04:00",
+            "material_type_facet": "News",
+            "kicker": "DealBook Newsletter",
+            "subheadline": "",
+            "des_facet": [
+                "internal-storyline-no",
+                "Artificial Intelligence"
+            ],
+            "org_facet": [
+                "Credit Suisse Group AG",
+                "Google Inc",
+                "UBS AG"
+            ],
+            "per_facet": [
+                "Trump, Donald J"
+            ],
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22db-newsletter-creditsuisse-gpjh/22db-newsletter-creditsuisse-gpjh-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A grim mood has descended on Credit Suisse’s offices.",
+                    "copyright": "Michael Buholzer/EPA, via Shutterstock"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22db-newsletter-creditsuisse-gpjh/22db-newsletter-creditsuisse-gpjh-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A grim mood has descended on Credit Suisse’s offices.",
+                    "copyright": "Michael Buholzer/EPA, via Shutterstock"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22db-newsletter-creditsuisse-gpjh/22db-newsletter-creditsuisse-gpjh-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A grim mood has descended on Credit Suisse’s offices.",
+                    "copyright": "Michael Buholzer/EPA, via Shutterstock"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22db-newsletter-creditsuisse-gpjh/22db-newsletter-creditsuisse-gpjh-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A grim mood has descended on Credit Suisse’s offices.",
+                    "copyright": "Michael Buholzer/EPA, via Shutterstock"
+                }
+            ]
+        },
+        {
+            "slug_name": "22rightwing-ai",
+            "section": "Business",
+            "subsection": "Media",
+            "title": "Conservatives Aim to Build a Chatbot of Their Own",
+            "abstract": "After criticizing A.I. companies for liberal bias, programmers started envisioning right-wing alternatives, making chatbots a new front in the culture wars.",
+            "uri": "nyt://article/d57329f4-7fc1-5338-b023-899d89af5c7b",
+            "url": "https://www.nytimes.com/2023/03/22/business/media/ai-chatbots-right-wing-conservative.html",
+            "byline": "BY STUART A. THOMPSON, TIFFANY HSU AND STEVEN LEE MYERS",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/17/technology/disinfo-aibias-topper-promo/disinfo-aibias-topper-promo-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T10:15:16-04:00",
+            "created_date": "2023-03-22T05:00:53-04:00",
+            "published_date": "2023-03-22T05:00:53-04:00",
+            "first_published_date": "2023-03-22T05:00:53-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Artificial Intelligence",
+                "Discrimination",
+                "Right-Wing Extremism and Alt-Right",
+                "Politics and Government",
+                "ChatGPT",
+                "Fringe Groups and Movements",
+                "Rumors and Misinformation"
+            ],
+            "org_facet": [
+                "Gab AI Inc",
+                "OpenAI Labs"
+            ],
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/technology/disinfo-aibias-topper-promo/disinfo-aibias-topper-promo-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/technology/disinfo-aibias-topper-promo/disinfo-aibias-topper-promo-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/technology/disinfo-aibias-topper-promo/disinfo-aibias-topper-promo-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/17/technology/disinfo-aibias-topper-promo/disinfo-aibias-topper-promo-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                }
+            ]
+        },
+        {
+            "slug_name": "22banks-cre",
+            "section": "Business",
+            "subsection": "",
+            "title": "Bank Crisis Could Cast Pall Over Commercial Real Estate Market",
+            "abstract": "The market hadn’t fully rebounded from the pandemic. Some worry that another slowdown could add to fears of a recession.",
+            "uri": "nyt://article/b9a13a6f-4066-5c92-acfb-65f1aaf6ea24",
+            "url": "https://www.nytimes.com/2023/03/22/business/svb-signature-commercial-real-estate.html",
+            "byline": "BY MATTHEW GOLDSTEIN",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22bank-cre-01-tmlj/22bank-cre-01-tmlj-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T05:00:47-04:00",
+            "created_date": "2023-03-22T05:00:47-04:00",
+            "published_date": "2023-03-22T05:00:47-04:00",
+            "first_published_date": "2023-03-22T05:00:47-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Banking and Financial Institutions",
+                "Real Estate (Commercial)",
+                "Recession and Depression",
+                "Interest Rates",
+                "Stocks and Bonds",
+                "United States Economy"
+            ],
+            "org_facet": [
+                "Federal Deposit Insurance Corp",
+                "Federal Reserve System",
+                "First Republic Bank",
+                "Signature Bank",
+                "Silicon Valley Bank"
+            ],
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22bank-cre-01-tmlj/22bank-cre-01-tmlj-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A building under construction in the Chelsea neighborhood of Manhattan.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22bank-cre-01-tmlj/22bank-cre-01-tmlj-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A building under construction in the Chelsea neighborhood of Manhattan.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22bank-cre-01-tmlj/22bank-cre-01-tmlj-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A building under construction in the Chelsea neighborhood of Manhattan.",
+                    "copyright": "Gabby Jones for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22bank-cre-01-tmlj/22bank-cre-01-tmlj-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 118,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "A building under construction in the Chelsea neighborhood of Manhattan.",
+                    "copyright": "Gabby Jones for The New York Times"
+                }
+            ]
+        },
+        {
+            "slug_name": "23evolvingcity-bathrooms",
+            "section": "Business",
+            "subsection": "",
+            "title": "Why Are Public Restrooms Still So Rare?",
+            "abstract": "Cities in the U.S. and elsewhere have made strides, but challenges remain.",
+            "uri": "nyt://article/33444a48-437a-5334-a63e-5a13757465f9",
+            "url": "https://www.nytimes.com/2023/03/22/business/public-restrooms-bathrooms-us-city.html",
+            "byline": "BY JEN A. MILLER",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22evolvingcity-bathrooms-10-bvqg/22evolvingcity-bathrooms-10-bvqg-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T05:00:37-04:00",
+            "created_date": "2023-03-22T05:00:38-04:00",
+            "published_date": "2023-03-22T05:00:38-04:00",
+            "first_published_date": "2023-03-22T05:00:38-04:00",
+            "material_type_facet": "News",
+            "kicker": "The Evolving City",
+            "subheadline": "",
+            "des_facet": [
+                "Bathrooms and Toilets",
+                "Urban Areas",
+                "Infrastructure (Public Works)",
+                "Waste Materials and Disposal"
+            ],
+            "org_facet": null,
+            "per_facet": null,
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22evolvingcity-bathrooms-10-bvqg/22evolvingcity-bathrooms-10-bvqg-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "One of the 17 redesigned public restrooms in Tokyo’s Shibuya ward. ",
+                    "copyright": "Satoshi Nagare, via The Nippon Foundation"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22evolvingcity-bathrooms-10-bvqg/22evolvingcity-bathrooms-10-bvqg-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "One of the 17 redesigned public restrooms in Tokyo’s Shibuya ward. ",
+                    "copyright": "Satoshi Nagare, via The Nippon Foundation"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22evolvingcity-bathrooms-10-bvqg/22evolvingcity-bathrooms-10-bvqg-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "One of the 17 redesigned public restrooms in Tokyo’s Shibuya ward. ",
+                    "copyright": "Satoshi Nagare, via The Nippon Foundation"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22evolvingcity-bathrooms-10-bvqg/22evolvingcity-bathrooms-10-bvqg-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "One of the 17 redesigned public restrooms in Tokyo’s Shibuya ward. ",
+                    "copyright": "Satoshi Nagare, via The Nippon Foundation"
+                }
+            ]
+        },
+        {
+            "slug_name": "22stocks",
+            "section": "Business",
+            "subsection": "",
+            "title": "Stocks Drop After Fed Raises Rates Despite Banking Turmoil",
+            "abstract": "There had been widespread uncertainty about whether the Federal Reserve would continue raising rates after turmoil in the banking industry.",
+            "uri": "nyt://article/d15b1682-4afc-5998-a6a5-140aedf879f9",
+            "url": "https://www.nytimes.com/2023/03/22/business/stock-markets-rates-fed-decision.html",
+            "byline": "BY JOE RENNISON",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T16:49:02-04:00",
+            "created_date": "2023-03-22T05:00:15-04:00",
+            "published_date": "2023-03-22T05:00:15-04:00",
+            "first_published_date": "2023-03-22T05:00:15-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Banking and Financial Institutions",
+                "Interest Rates",
+                "Stocks and Bonds"
+            ],
+            "org_facet": [
+                "Federal Reserve System"
+            ],
+            "per_facet": null,
+            "geo_facet": [
+                "United States"
+            ],
+            "related_urls": null,
+            "multimedia": null
+        },
+        {
+            "slug_name": "22DC-FED",
+            "section": "Business",
+            "subsection": "",
+            "title": "The Fed, Still Inflation-Focused, Raised Rates Amid Bank Uncertainty",
+            "abstract": "Federal Reserve officials raised interest rates by a quarter-point while they noted that bank turmoil could help slow the economy.",
+            "uri": "nyt://article/9ae91934-3985-5765-b6a8-16a3cb7a4ba7",
+            "url": "https://www.nytimes.com/2023/03/22/business/federal-reserve-interest-rates-banks.html",
+            "byline": "BY JEANNA SMIALEK",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/21/business/fed-target-rate-promo/fed-target-rate-promo-thumbStandard-v2.png",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T20:34:54-04:00",
+            "created_date": "2023-03-22T05:00:08-04:00",
+            "published_date": "2023-03-22T05:00:08-04:00",
+            "first_published_date": "2023-03-22T05:00:08-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Interest Rates",
+                "Banking and Financial Institutions",
+                "Prices (Fares, Fees and Rates)",
+                "Inflation (Economics)",
+                "United States Economy"
+            ],
+            "org_facet": [
+                "Federal Reserve System",
+                "Silicon Valley Bank"
+            ],
+            "per_facet": [
+                "Powell, Jerome H"
+            ],
+            "geo_facet": null,
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/21/business/fed-target-rate-promo/fed-target-rate-promo-thumbStandard-v2.png",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/21/business/fed-target-rate-promo/fed-target-rate-promo-mediumThreeByTwo210-v2.png",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/21/business/fed-target-rate-promo/fed-target-rate-promo-mediumThreeByTwo440-v2.png",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/21/business/fed-target-rate-promo/fed-target-rate-promo-articleInline-v2.png",
+                    "format": "Normal",
+                    "height": 127,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "",
+                    "copyright": ""
+                }
+            ]
+        },
+        {
+            "slug_name": "22uk-inflation",
+            "section": "Business",
+            "subsection": "",
+            "title": "U.K. Inflation Swings Upward, in a U-Turn",
+            "abstract": "Prices in Britain reversed a recent downward trend, rising 10.4 percent over the year through February.",
+            "uri": "nyt://article/a153ee57-740f-51bf-83fe-f376d76caffd",
+            "url": "https://www.nytimes.com/2023/03/22/business/uk-inflation-february.html",
+            "byline": "BY ESHE NELSON",
+            "thumbnail_standard": "https://static01.nyt.com/images/2023/03/22/multimedia/22uk-inflation-tlvq/22uk-inflation-tlvq-thumbStandard.jpg",
+            "item_type": "Article",
+            "source": "New York Times",
+            "updated_date": "2023-03-22T14:30:58-04:00",
+            "created_date": "2023-03-22T03:44:17-04:00",
+            "published_date": "2023-03-22T03:44:17-04:00",
+            "first_published_date": "2023-03-22T03:44:17-04:00",
+            "material_type_facet": "News",
+            "kicker": "",
+            "subheadline": "",
+            "des_facet": [
+                "Interest Rates",
+                "Economic Conditions and Trends",
+                "Inflation (Economics)",
+                "Prices (Fares, Fees and Rates)",
+                "Wages and Salaries"
+            ],
+            "org_facet": [
+                "Bank of England",
+                "Bank of Canada",
+                "Federal Reserve System"
+            ],
+            "per_facet": [
+                "Bailey, Andrew (1959- )"
+            ],
+            "geo_facet": [
+                "Great Britain"
+            ],
+            "related_urls": null,
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22uk-inflation-tlvq/22uk-inflation-tlvq-thumbStandard.jpg",
+                    "format": "Standard Thumbnail",
+                    "height": 75,
+                    "width": 75,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Oxford Street shoppers in London. The Bank of England has raised rates nearly four percentage points in an effort to stem high inflation.",
+                    "copyright": "Sam Bush for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22uk-inflation-tlvq/22uk-inflation-tlvq-mediumThreeByTwo210.jpg",
+                    "format": "mediumThreeByTwo210",
+                    "height": 140,
+                    "width": 210,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Oxford Street shoppers in London. The Bank of England has raised rates nearly four percentage points in an effort to stem high inflation.",
+                    "copyright": "Sam Bush for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22uk-inflation-tlvq/22uk-inflation-tlvq-mediumThreeByTwo440.jpg",
+                    "format": "mediumThreeByTwo440",
+                    "height": 293,
+                    "width": 440,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Oxford Street shoppers in London. The Bank of England has raised rates nearly four percentage points in an effort to stem high inflation.",
+                    "copyright": "Sam Bush for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2023/03/22/multimedia/22uk-inflation-tlvq/22uk-inflation-tlvq-articleInline.jpg",
+                    "format": "Normal",
+                    "height": 136,
+                    "width": 190,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Oxford Street shoppers in London. The Bank of England has raised rates nearly four percentage points in an effort to stem high inflation.",
+                    "copyright": "Sam Bush for The New York Times"
+                }
+            ]
+        }
+    ]
+}
