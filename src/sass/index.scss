@@ -1,7 +1,7 @@
-@import './common';
+@import './base/common';
+@import './base/fonts';
+@import './utils/variables';
 
-@import './variables';
-@import './base';
-@import './fonts';
-
-@import './card';
+@import './layouts/header';
+@import './layouts/card';
+@import './layouts/categories';
