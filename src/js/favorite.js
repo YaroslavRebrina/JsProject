@@ -10,6 +10,25 @@ let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
 favoriteMarkup(getFavorites());
 
+{
+  /* <li id=${id} class='${containerClass}__card card'>
+
+      <div class='card__container'>
+        <img class='card__img' src="${imageUrl}" 
+          alt="${imageAlt ?? abstract}">
+        <span class='card__category'>${category}</span>
+        ${alReadyRead}
+        ${addToFavorite}
+      </div>
+
+      <h2 class='card__title'>${title}</h2>
+      <p class='card__abstract'>${abstract}</p>
+      <span class='card__date'>${date}</span>
+      <a class='card__read' href="${url}">Read more</a>
+
+    </li>`; */
+}
+
 // functions
 
 //add event listener to butt

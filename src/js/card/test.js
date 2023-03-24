@@ -6,6 +6,8 @@ import data from '../json/all.json';
 import data2 from '../json/articlesearch.json';
 import data3 from '../json/business.json';
 
+const cardList = document.querySelector('.card__list');
+
 const dataCard = {
   id: data.results[3].uri.replace('nyt://article/', ''),
   date: data.results[3].published_date.replace(
@@ -25,4 +27,4 @@ const dataCard = {
 // console.log(data.results);
 // console.log(card(dataCard));
 
-document.body.innerHTML = card(dataCard);
+cardList.innerHTML = card(dataCard);
