@@ -36,30 +36,30 @@
         >
       </li>
     </ul>
-    <input
-      class="header-input"
-      type="text"
-      name="Search"
-      placeholder="Search"
-    />
-    <svg class="header-input__icon">
-      <use href="./fonts/images/icons.svg#icon-search"></use>
-    </svg>
+      <label for="header-label__input">
+        <svg class="header-input__icon">
+          <use href="./fonts/images/icons.svg#icon-search"></use>
+        </svg>
+        <input
+          class="header-input"
+          type="text"
+          name="Search"
+          placeholder="Search  |"
+        />
+    </label>
   </nav>
-  <ul class="header-checkbox-list">
-    <li>Light</li>
-    <li>
+  <div class="header__theme-select">
+  <p class="header__theme-select-light--on">Light</p>
       <label class="switch">
-        <svg class="aa">
+        <svg class="header-checkbox__icon-light">
           <use href="./fonts/images/icons.svg#icon-sun"></use>
         </svg>
         <input type="checkbox" />
         <span class="slider round"></span>
-        <svg>
+        <svg class="header-checkbox__icon-dark">
           <use href="./fonts/images/icons.svg#icon-moon"></use>
         </svg>
       </label>
-    </li>
-    <li>Dark</li>
-  </ul>
+      <p class="header__theme-select-dark--off">Dark</p>
+      </div>
 </header>
