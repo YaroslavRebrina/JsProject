@@ -53,7 +53,7 @@ export function card(data, containerClass) {
 
       <span ${isFavoriteFalse(isFavorite)}>Add to favorite
         <svg width="16" height="16" class="box__icon favorite-icon">
-          <use href="./images/icons.svg#icon-like-nonactive"></use>
+          <use href=".images/icons.svg#icon-like-nonactive"></use>
         </svg>
       </span>
 
