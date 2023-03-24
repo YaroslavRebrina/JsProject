@@ -31,50 +31,56 @@ export function card(data, containerClass) {
   return createCardElement(containerClass);
 
   function createCardElement(containerClass = 'list') {
+    console.log(isFavorite);
     const alReadyReadText =
-      containerClass === 'read'
+      containerClass === 'read' //прописати class ul для стор. Read
         ? 'Have read'
         : `Already read 
         <svg width="18" height="18">
           <use href="./images/icons.svg#icon-read"></use>
         </svg>`;
 
-    const alReadyRead = `<span class='${containerClass}__read ${
-      !isRead ? `${containerClass}__read--false` : ''
-    }'>${alReadyReadText}</span>`;
+    const alReadyReadFalse = isRead => (!isRead ? `card__already--false` : '');
 
-    const addToFavorite = `<span class='${containerClass}__favorite'> ${
-      !isFavorite ? `Add to Favorite` : 'Remove from favorite'
-    }</span>`;
+    const alReadyRead = `<span class='card__already ${alReadyReadFalse(
+      isRead
+    )}'>${alReadyReadText}</span>`;
 
-    `<button type='button' class='card__favorite'>
-      <span ${!isRead ? `class='favorite__text--false'` : ''}>Add to favorite
+    const isFavoriteFalse = isFavorite =>
+      isFavorite ? `class='favorite__text--false'` : '';
+    console.log(isFavorite, isFavoriteFalse(isFavorite));
+    const addToFavorite = `<button type='button' class='card__favorite'>
+
+      <span ${isFavoriteFalse(isFavorite)}>Add to favorite
         <svg width="16" height="16" class="box__icon favorite-icon">
           <use href="./images/icons.svg#icon-like-nonactive"></use>
         </svg>
       </span>
-      <span ${
-        isRead ? `class='favorite__text--false'` : ''
-      }>Remove from favorite
+
+      <span ${isFavoriteFalse(!isFavorite)}>Remove from favorite
         <svg width="16" height="16" class="box__icon remove-icon">
           <use href="./images/icons.svg#icon-like-active"></use>
         </svg>
       </span>
+
     </button>`;
 
     return `
-    <li id=${id} class='${containerClass}__card'>
+    <li id=${id} class='${containerClass}__card card'>
+
       <div class='card__container'>
         <img class='card__img' src="${imageUrl}" 
           alt="${imageAlt ?? abstract}">
         <span class='card__category'>${category}</span>
         ${alReadyRead}
-        <span class='card__date'>${date}</span>
         ${addToFavorite}
       </div>
+
       <h2 class='card__title'>${title}</h2>
       <p class='card__abstract'>${abstract}</p>
+      <span class='card__date'>${date}</span>
       <a class='card__read' href="${url}">Read more</a>
+
     </li>`;
   }
 }
