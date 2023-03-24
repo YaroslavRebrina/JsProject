@@ -13,6 +13,7 @@
 
 // isFavorite; //boolean => 'false' || localStorage FAVORITE*
 // isRead; //boolean => 'false' || localStorage FAVORITE*
+import sprite from '../../fonts/images/icons.svg';
 
 export function card(data, containerClass) {
   const {
@@ -52,14 +53,14 @@ export function card(data, containerClass) {
     const addToFavorite = `<button type='button' class='card__favorite'>
 
       <span ${isFavoriteFalse(isFavorite)}>Add to favorite
-        <svg width="16" height="16" class="box__icon favorite-icon">
-          <use href=".images/icons.svg#icon-like-nonactive"></use>
+        <svg  width="16" heigth="16">
+          <use href="${sprite}#icon-like-active"></use>
         </svg>
       </span>
 
       <span ${isFavoriteFalse(!isFavorite)}>Remove from favorite
         <svg width="16" height="16" class="box__icon remove-icon">
-          <use href="./images/icons.svg#icon-like-active"></use>
+          <use href="${sprite}#icon-like-active"></use>
         </svg>
       </span>
 

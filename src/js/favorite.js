@@ -2,16 +2,17 @@ import { FAVORITE_KEY, FAVORITE_TOTAL } from './constants';
 
 const refs = {
   listRef: document.querySelector('.favorite__list'),
+  buttonRef: document.querySelector('.card__favorite'),
 };
-const { listRef } = refs;
+const { listRef, buttonRef } = refs;
 
 let favouriteNews = localStorage.getItem(FAVORITE_KEY) || [];
 let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
 favoriteMarkup(getFavorites());
 
-{
-  /* <li id=${id} class='${containerClass}__card card'>
+// {
+/* <li id=${id} class='${containerClass}__card card'>
 
       <div class='card__container'>
         <img class='card__img' src="${imageUrl}" 
@@ -27,17 +28,19 @@ favoriteMarkup(getFavorites());
       <a class='card__read' href="${url}">Read more</a>
 
     </li>`; */
-}
+// }
 
 // functions
 
 //add event listener to butt
+buttonRef.addEventListener('click', addToFavourites);
+
 function addToFavourites(evt) {
-  evt.target.dataset.id = colletionTotal + 1;
-  evt.target.dataset.favorite = evt.target.innerHTML;
+  evt.currentTarget.dataset.id = colletionTotal + 1;
+  evt.currentTarget.dataset.favorite = evt.target.innerHTML;
   colletionTotal += 1;
 
-  favouriteNews.push(evt.target.dataset.favorite);
+  favouriteNews.push(evt.currentTarget.dataset.favorite);
   localStorage.setItem(FAVORITE_KEY, favouriteNews);
   localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
 }
