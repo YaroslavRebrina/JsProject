@@ -68,7 +68,7 @@ function objCardNormalize(objItem) {
     dataCard.imageUrl = defaultImageUrl;
   }
 
-  dataCard.url = objItem.url;
+  dataCard.url = objItem.url || objItem.web_url;
 
   dataCard.isFavorite = false; //Default
   dataCard.isRead = false; //Default
