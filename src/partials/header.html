@@ -1,56 +1,60 @@
-<header class="header container">
-  <nav class="header-nav">
-    <a
-      class="header-nav__logo-link"
-      href=""
-      target="_blank"
-      rel="noopener noreferrer"
-      >News</a
-    >
-    <ul class="header-nav__list">
-      <li class="header-nav__list-item">
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <nav class="header-nav">
         <a
-          class="header-nav__link"
+          class="header-nav__logo-link"
           href=""
           target="_blank"
           rel="noopener noreferrer"
-          >Home</a
+          >News</a
         >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >Favorite</a
-        >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >Read</a
-        >
-      </li>
-    </ul>
-    
-    <form class="search-form" id="search-form">
-        <input
-          type="text"
-          name="searchQuery"
-          placeholder="Search"
-          autocomplete="off"
-        />
-        <button class="submit" type="submit">
-        <svg class="header-input__icon">
-          <use href="./fonts/images/icons.svg#icon-search"></use>
-        </svg></button>
-      </form>
+        <ul class="header-nav__list">
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Home</a
+            >
+          </li>
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Favorite</a
+            >
+          </li>
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read</a
+            >
+          </li>
+        </ul>
 
-      <!-- <input
+        <form class="search-form" id="search-form">
+          <input
+            class="header-input"
+            type="text"
+            name="searchQuery"
+            placeholder="Search"
+            autocomplete="off"
+          />
+          <button class="submit" type="submit">
+            <svg class="header-input__icon">
+              <use href="./fonts/images/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <!-- <input
         class="header-input"
         type="text"
         name="Search"
@@ -59,23 +63,22 @@
       <svg class="header-input__icon">
         <use href="./fonts/images/icons.svg#icon-search"></use>
       </svg> -->
-      
-    
-  </nav>
-  <div class="header__theme-select">
-  <p class="header__theme-select-light--on">Light</p>
+      </nav>
+      <div class="header__theme-select">
+        <p class="header__theme-select-light--on">Light</p>
 
-      <label class="switch">
-        <svg class="header-checkbox__icon-light">
-          <use href="./fonts/images/icons.svg#icon-sun"></use>
-        </svg>
-        <input type="checkbox" />
-        <span class="slider round"></span>
-        <svg class="header-checkbox__icon-dark">
-          <use href="./fonts/images/icons.svg#icon-moon"></use>
-        </svg>
-      </label>
-      <p class="header__theme-select-dark--off">Dark</p>
+        <label class="switch">
+          <svg class="header-checkbox__icon-light">
+            <use href="./fonts/images/icons.svg#icon-sun"></use>
+          </svg>
+          <input type="checkbox" />
+          <span class="slider round"></span>
+          <svg class="header-checkbox__icon-dark">
+            <use href="./fonts/images/icons.svg#icon-moon"></use>
+          </svg>
+        </label>
+        <p class="header__theme-select-dark--off">Dark</p>
       </div>
+    </div>
+  </div>
 </header>
-
