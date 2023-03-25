@@ -25,5 +25,8 @@ const dataCard = {
 
 // console.log(data.results);
 // console.log(card(dataCard));
-
-cardList.innerHTML = card(dataCard);
+try {
+  cardList.innerHTML = card(dataCard);
+} catch (error) {
+  console.log(error.message);
+}
