@@ -6,10 +6,10 @@ const refs = {
 };
 const { listRef, buttonRef } = refs;
 
-let favouriteNews = localStorage.getItem(FAVORITE_KEY) || [];
+let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
-favoriteMarkup(getFavorites());
+// favoriteMarkup(getFavorites());
 
 // {
 /* <li id=${id} class='${containerClass}__card card'>
@@ -32,6 +32,8 @@ favoriteMarkup(getFavorites());
 
 // functions
 
+// if target = button go to closer li and inner html
+
 //add event listener to butt
 buttonRef.addEventListener('click', addToFavourites);
 
@@ -39,9 +41,9 @@ function addToFavourites(evt) {
   evt.currentTarget.dataset.id = colletionTotal + 1;
   evt.currentTarget.dataset.favorite = evt.target.innerHTML;
   colletionTotal += 1;
-
+  console.log(1);
   favouriteNews.push(evt.currentTarget.dataset.favorite);
-  localStorage.setItem(FAVORITE_KEY, favouriteNews);
+  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
   localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
 }
 
@@ -60,15 +62,19 @@ function getFavorites() {
     // const favoriteItems = localStorage.getItem(FAVORITE_KEY);
     return JSON.parse(favouriteNews);
   } catch (e) {
-    console.log(console.log(e));
+    console.log(console.log(e.message));
   }
 }
 
 function favoriteMarkup(callback) {
-  const items = callback;
+  const items = callback.map(item => { })//markup
 
   const markup = items.join('');
-  listRef.innerHTML = markup;
+  try {
+    listRef.innerHTML = markup;
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
 //closest or stop paitaintion if target `li`

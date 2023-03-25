@@ -1,4 +1,3 @@
-// Відсутня функція нормалізації даних станом на 24.3.23 6:30
 // Тестовий рендер картки
 
 import { card } from '.';
@@ -20,11 +19,14 @@ const dataCard = {
   imageUrl: data.results[3].multimedia[2].url,
   imageAlt: data.results[3].multimedia[2].caption,
   url: data.results[3].url,
-  //   isFavorite: false,
-  //   isRead: false,
+  isFavorite: true,
+  isRead: true,
 };
 
 // console.log(data.results);
 // console.log(card(dataCard));
-
-cardList.innerHTML = card(dataCard);
+try {
+  cardList.innerHTML = card(dataCard);
+} catch (error) {
+  console.log(error.message);
+}
