@@ -79,7 +79,7 @@ export function card(data, containerClass) {
       <h2 class='card__title'>${title}</h2>
       <p class='card__abstract'>${abstract}</p>
       <span class='card__date'>${date}</span>
-      <a class='card__read' href="${url}">Read more</a>
+      <a class='card__read' href="${url}" target="_blank">Read more</a>
 
     </li>`;
   }

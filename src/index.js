@@ -1,5 +1,10 @@
-import './js/obj-normalize/cards-servise-corr';
-import './js/obj-normalize/search-form-corr';
+
+
+
+import './js/cards-service';
+import './js/search-form';
+// import './js/obj-normalize/cards-servise-corr';
+// import './js/obj-normalize/search-form-corr';
 import './js/switcher';
 
 // import test from './js/card/test'; //генерація тестової картки
