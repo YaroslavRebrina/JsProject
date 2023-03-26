@@ -27,6 +27,16 @@ export default class CardsApiService {
     }
   }
 
+  fetchListAllCategories() {
+    try {
+      return fetch(
+        `https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=dWr4kZ2eThN3qFyvwxS66Oz0pgO5uwGr`
+      ).then(response => response.json());
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   get query() {
     return this.searchQuery;
   }
