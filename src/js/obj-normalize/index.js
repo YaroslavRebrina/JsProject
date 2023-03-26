@@ -7,7 +7,6 @@ const windowInnerWidth = document.documentElement.clientWidth; // ширина �
 const date = new Date();
 const dateNews = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`; // Якщо відсутня дата, беремо поточну.
 const uriRepl = 'nyt://article/';
-const dateRepl = /((\d){4})-((\d){2})-((\d){2})(\S)*/g;
 
 export const objNormalize = data => {
   let objList = {};
@@ -33,10 +32,13 @@ function objCardNormalize(objItem) {
 
   // Дата публікації
   dataCard.date = (() => {
-    if (objItem.published_date)
-      return objItem.published_date.replace(dateRepl, '$3/$2/$1');
+    if (objItem.published_date) {
+      return objItem.published_date;
+    }
 
-    if (objItem.pub_date) return objItem.pub_date.replace(dateRepl, '$3/$2/$1');
+    if (objItem.pub_date) {
+      return objItem.pub_date;
+    }
 
     return dateNews; //Коли автор забув дату поставити)
   })();
