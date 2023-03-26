@@ -1,40 +1,17 @@
- <section>
-      <div class="categories-container">
-        <div class="categories">
-          <ul class="categories__list" id="categories__list">
-            <li class="categories__item">
-              <button class="categories__btn display-tab" type="button"></button>
-            </li>
-            <li class="categories__item display-tab">
-              <button class="categories__btn" type="button"></button>
-            </li>
-            <li class="categories__item display-tab">
-              <button class="categories__btn" type="button"></button>
-            </li>
-            <li class="categories__item display-tab">
-              <button class="categories__btn" type="button"></button>
-            </li>
-            <li class="categories__item display-desk">
-              <button class="categories__btn" type="button"></button>
-            </li>
-            <li class="categories__item display-desk">
-              <button class="categories__btn" type="button"></button>
-            </li>
-            <li class="categories__item">
-              <button class="categories__btn" type="button" id="others">
-                <span id="categories-span">Others</span>
-                <svg class="categories__arrow" id="categories__arrow" width="14" height="14">
-                    <use href="./fonts/images/icons.svg#icon-arrow-down"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-
-          <div class="dropdown js-is-hidden" id="dropdown">
-            <ul id="others-list"></ul>
+<section class="container">
+  <div class="categories-container">
+    <div class="categories"></div>
+    <div class="container__dropdown">
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input type="radio" class="radio" id="label1" name="category" />
+            <label for="label1">Label 1</label>
           </div>
-          
         </div>
+
+        <div class="selected">Others</div>
       </div>
     </div>
+  </div>
 </section>

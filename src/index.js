@@ -1,4 +1,5 @@
 import './js/cards-service';
+import './js/categories';
 import './js/search-form';
 // import './js/weather-widget/weather-widget';
 // import './js/obj-normalize/cards-servise-corr';
