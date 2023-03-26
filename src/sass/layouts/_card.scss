@@ -1,14 +1,27 @@
 /*MStartsev*/
 
 .card {
+  position: relative;
   display: block;
   width: 288px;
+  min-height: 630px;
   text-decoration: none;
-  
-  border-radius: 5px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(10, 5, 20, 0.06),
-    1px 5px 6px rgba(12, 7, 27, 0.16);
+
+  border: none;
+  box-shadow: 5px 5px 5px rgba(134, 133, 133, 0.02),
+    2px 7px 10px rgba(126, 125, 126, 0.02),
+    3px 9px 20px rgba(234, 233, 238, 0.05);
   transition: all 0.25s;
+
+  @media screen and (min-width: $tablet) {
+    width: 353px;
+    min-height: 675px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 395px;
+    min-height: 675px;
+  }
 
   & svg {
     margin-left: 4px;
@@ -21,6 +34,14 @@
     position: relative;
     width: 288px;
     height: 395px;
+
+    @media screen and (min-width: $tablet) {
+      width: 353px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 395px;
+    }
   }
 
   &__img {
@@ -30,6 +51,14 @@
     height: 395px;
     position: absolute;
     z-index: -1;
+
+    @media screen and (min-width: $tablet) {
+      width: 353px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 395px;
+    }
   }
 
   &__already {
@@ -37,13 +66,12 @@
     left: 167px;
     top: 14px;
 
-    font-family: 'Manrope';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 35;
+    line-height: 1.35;
     color: #00dd73;
-    stroke: #00dd73;
     fill: #00dd73;
 
     &--false {
@@ -59,11 +87,11 @@
     top: 40px;
     padding: 4px 8px;
 
-    font-family: 'Manrope';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.333;
     text-align: center;
     color: #ffffff;
 
@@ -78,11 +106,11 @@
     top: 355px;
     padding: 6px 12px;
 
-    font-family: 'Manrope';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.333;
     text-align: center;
 
     color: #111321;
@@ -94,48 +122,80 @@
   }
 
   &__title {
-    font-family: 'Manrope';
+    display: block;
+    padding-top: 20px;
+    margin: 0;
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 1.375;
     letter-spacing: -0.01em;
-    
-  }
-
-  &__abstract {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    
 
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: 1.36;
+    }
   }
 
-  &__date {
-    margin-right: 145px;
-    font-family: 'Manrope';
+  &__abstract {
+    padding-top: 20px;
+    margin: 0;
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 1.36;
+
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.375;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 2px;
+    font-family: var(--font-family-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
     text-align: right;
     color: #a8a8a8;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.375;
+    }
   }
 
   &__read {
-    font-family: 'Manrope';
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #4440f7;
     text-decoration: none;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.375;
+    }
   }
 }
 
