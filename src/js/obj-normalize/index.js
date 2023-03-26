@@ -52,7 +52,7 @@ function objCardNormalize(objItem) {
   //Короткий опис новини
   dataCard.abstract = objItem.abstract;
 
-  //нема ради, отака страшна перевірка)
+  //нема ради, отака страшна перевірка:)
   if (objItem.media)
     if (objItem.media.length)
       if (objItem.media[0]['media-metadata'])
