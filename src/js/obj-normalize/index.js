@@ -50,23 +50,41 @@ function objCardNormalize(objItem) {
   //Короткий опис новини
   dataCard.abstract = objItem.abstract;
 
-  // if (objItem.multimedia.length) {
-  //   //пошук оптимальної картинки
-  //   const objImage = searchObjImageForCard(objItem.multimedia);
+  if (objItem.media)
+    if (objItem.media.length)
+      if (objItem.media[0]['media-metadata'])
+        if (objItem.media[0]['media-metadata'].length) {
+          //пошук оптимальної картинки
+          const objImage = searchObjImageForCard(
+            objItem.media[0]['media-metadata']
+          );
 
-  //   if (!/static01.nyt.com/i.test(objImage.url)) {
-  //     objImage.url = baseUrl + objImage.url;
-  //   }
+          if (!/static01.nyt.com/i.test(objImage.url)) {
+            objImage.url = baseUrl + objImage.url;
+          }
 
-  //   // src картинки
-  //   dataCard.imageUrl = objImage.url;
+          // src картинки
+          dataCard.imageUrl = objImage.url;
+        } else {
+          if (objItem.multimedia)
+            if (objItem.multimedia.length) {
+              //пошук оптимальної картинки
+              const objImage = searchObjImageForCard(objItem.multimedia);
 
-  //   // alt картинки
-  //   dataCard.imageAlt = objImage.caption;
-  // } else {
-  //   // if("загубилась картинка") return буде:)
-  //   dataCard.imageUrl = defaultImageUrl;
-  // }
+              if (!/static01.nyt.com/i.test(objImage.url)) {
+                objImage.url = baseUrl + objImage.url;
+              }
+
+              // src картинки
+              dataCard.imageUrl = objImage.url;
+
+              // alt картинки
+              dataCard.imageAlt = objImage.caption;
+            } else {
+              // if("загубилась картинка") return буде:)
+              dataCard.imageUrl = defaultImageUrl;
+            }
+        }
 
   dataCard.url = objItem.url || objItem.web_url;
 
