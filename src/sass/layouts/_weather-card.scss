@@ -1,0 +1,123 @@
+.weather__widget {
+  display: flex;
+  max-width: 288px;
+  height: 469px;
+  background-color: #4440f7;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    max-width: 353px;
+    height: 675px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 395px;
+  }
+}
+
+.weather__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 32px 0;
+
+  & img {
+    margin: 53px auto 40px;
+    width: 128px;
+    height: 121px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+    & img {
+      margin: 90px auto;
+      width: 165px;
+      height: 156px;
+    }
+  }
+}
+
+.weather__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.weather__wrapper--column {
+  flex-direction: column;
+}
+
+.weather__wrapper--accent {
+  background: rgba(254, 254, 255, 0.3);
+  border-radius: 10px;
+  padding: 9px 8px;
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 17px;
+  }
+}
+
+.temperature {
+  position: relative;
+  font-size: 55px;
+  margin-right: 12px;
+  &::after {
+    position: absolute;
+    width: 63px;
+    height: 0;
+    content: '';
+    border: 1px solid #ffffff;
+    left: 23px;
+    bottom: 32px;
+    transform: rotate(90deg);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+    margin-right: 16px;
+    &::after {
+      width: 81px;
+      left: 28px;
+      bottom: 40px;
+    }
+  }
+}
+.description {
+  font-size: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.location-icon {
+  width: 18px;
+  height: 18px;
+  fill: red;
+  color: blue;
+  @media screen and (min-width: 768px) {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.location {
+  font-size: 14px;
+  line-height: 1.14;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.date {
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+}
