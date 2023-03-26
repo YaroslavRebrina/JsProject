@@ -1,48 +1,31 @@
 import { FAVORITE_KEY, FAVORITE_TOTAL } from './constants';
 
 const refs = {
+  listRefHome: document.querySelector('.card__list'),
   listRef: document.querySelector('.favorite__list'),
   buttonRef: document.querySelector('.card__favorite'),
 };
-const { listRef, buttonRef } = refs;
+const { listRef, buttonRef, listRefHome } = refs;
 
 let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
-// favoriteMarkup(getFavorites());
+const regexpOpener = `<li>`;
+const regexpCloser = `</li>`;
 
-// {
-/* <li id=${id} class='${containerClass}__card card'>
-
-      <div class='card__container'>
-        <img class='card__img' src="${imageUrl}" 
-          alt="${imageAlt ?? abstract}">
-        <span class='card__category'>${category}</span>
-        ${alReadyRead}
-        ${addToFavorite}
-      </div>
-
-      <h2 class='card__title'>${title}</h2>
-      <p class='card__abstract'>${abstract}</p>
-      <span class='card__date'>${date}</span>
-      <a class='card__read' href="${url}">Read more</a>
-
-    </li>`; */
-// }
-
-// functions
-
-// if target = button go to closer li and inner html
-
-//add event listener to butt
-buttonRef.addEventListener('click', addToFavourites);
+listRefHome.addEventListener('click', addToFavourites);
 
 function addToFavourites(evt) {
-  evt.currentTarget.dataset.id = colletionTotal + 1;
-  evt.currentTarget.dataset.favorite = evt.target.innerHTML;
+  if (!evt.composedPath().includes(buttonRef)) {
+    return;
+  }
+  let liRef = evt.target.closest('li');
+
+  liRef.dataset.id = colletionTotal + 1;
+  liRef.dataset.favorite = liRef.innerHTML;
   colletionTotal += 1;
-  console.log(1);
-  favouriteNews.push(evt.currentTarget.dataset.favorite);
+  favouriteNews.push(`${regexpOpener}${liRef.dataset.favorite}${regexpCloser}`);
+
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
   localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
 }
@@ -59,7 +42,6 @@ function removeFavourite(evt) {
 
 function getFavorites() {
   try {
-    // const favoriteItems = localStorage.getItem(FAVORITE_KEY);
     return JSON.parse(favouriteNews);
   } catch (e) {
     console.log(console.log(e.message));
@@ -67,7 +49,7 @@ function getFavorites() {
 }
 
 function favoriteMarkup(callback) {
-  const items = callback.map(item => { })//markup
+  const items = callback.map(item => {}); //markup
 
   const markup = items.join('');
   try {
@@ -76,5 +58,3 @@ function favoriteMarkup(callback) {
     console.log(error.message);
   }
 }
-
-//closest or stop paitaintion if target `li`
