@@ -139,6 +139,7 @@ a {
   padding: 5.31px 189px 4.43px 48px;
   border: 1px solid var(--light-theme-text-color);
   border-radius: 20px;
+  background-color: transparent;
 }
 
 .header-input__icon {
@@ -359,6 +360,7 @@ svg {
 .header__theme-select-dark--on {
     color: var(--main-color-blue);
 }
+
 
 
 // Dark theme

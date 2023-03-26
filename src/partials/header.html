@@ -2,37 +2,58 @@
   <div class="container">
     <div class="header__wrapper">
       <nav class="header-nav">
-        <a
-          class="header-nav__logo-link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >News</a
-        >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >Favorite</a
-        >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          >Read</a
-        >
-      </li>
-    </ul>
-      <label for="header-label__input">
-        <svg class="header-input__icon">
-          <use href="./fonts/images/icons.svg#icon-search"></use>
+        <ul class="header-nav">
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__logo-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >News</a
+            >
+          </li>
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Favorite</a
+            >
+          </li>
+          <li class="header-nav__list-item">
+            <a
+              class="header-nav__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read</a
+            >
+          </li>
+        </ul>
+        <form id="search-form">
+          <label for="header-label__input">
+            <button type="submit">
+              <svg class="header-input__icon">
+                <use href="./fonts/images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+
+            <input
+              class="header-input"
+              type="text"
+              name="search"
+              placeholder="Search  |"
+            />
+          </label>
+        </form>
+      </nav>
+      <div class="header__theme-select">
+        <p class="header__theme-select-light--on">Light</p>
+        <svg class="header-checkbox__icon-light">
+          <use href="./fonts/images/icons.svg#icon-sun"></use>
         </svg>
+
         <input
           class="header-input"
           type="text"
@@ -41,19 +62,18 @@
         />
     </label>
   </nav>
-  <div class="header__theme-select">
-    <p class="header__theme-select-light--on">Light</p>
-    <svg class="header-checkbox__icon-light">
-      <use href="./fonts/images/icons.svg#icon-sun"></use>
-    </svg>
-    <label class="header__switch">
-      <input type="checkbox"/>
-      <span class="header__slider header__slider-round"></span>
-    </label>
-    <svg class="header-checkbox__icon-dark">
-      <use href="./fonts/images/icons.svg#icon-moon"></use>
-    </svg>
-    <p class="header__theme-select-dark--off">Dark</p>
+        <label class="switch">
+          <input
+            class="switch-checkbox"
+           type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <svg class="header-checkbox__icon-dark">
+          <use href="./fonts/images/icons.svg#icon-moon"></use>
+        </svg>
+        <p class="header__theme-select-dark--off">Dark</p>
+      </div>
+    </div>
   </div>
 </header>
 
