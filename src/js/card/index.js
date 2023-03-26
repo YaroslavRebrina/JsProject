@@ -29,6 +29,9 @@ export function card(data, containerClass) {
     isRead = false,
   } = data;
 
+  const dateRepl = /((\d){4})-((\d){2})-((\d){2})(\S)*/g;
+  const renderDate = date.replace(dateRepl, '$5/$3/$1');
+
   return createCardElement(containerClass);
 
   function createCardElement(containerClass = 'list') {
@@ -78,7 +81,7 @@ export function card(data, containerClass) {
 
       <h2 class='card__title'>${title}</h2>
       <p class='card__abstract'>${abstract}</p>
-      <span class='card__date'>${date}</span>
+      <span class='card__date'>${renderDate}</span>
       <a class='card__read' href="${url}" target="_blank">Read more</a>
 
     </li>`;
