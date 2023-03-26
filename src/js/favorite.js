@@ -35,7 +35,7 @@ let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 // if target = button go to closer li and inner html
 
 //add event listener to butt
-buttonRef.addEventListener('click', addToFavourites);
+// buttonRef.addEventListener('click', addToFavourites);
 
 function addToFavourites(evt) {
   evt.currentTarget.dataset.id = colletionTotal + 1;
@@ -67,7 +67,7 @@ function getFavorites() {
 }
 
 function favoriteMarkup(callback) {
-  const items = callback.map(item => { })//markup
+  const items = callback.map(item => {}); //markup
 
   const markup = items.join('');
   try {
