@@ -1,41 +1,41 @@
 import Notiflix from 'notiflix';
 import CardsApiService from './cards-servise-corr';
-import { renderNormalize } from './render-normalize';
+// import { renderNormalize } from './render-normalize';
 
 const cardsApiService = new CardsApiService();
 const searchForm = document.querySelector('#search-form');
 const submitBtn = document.querySelector('[type="submit"]');
 const gallery = document.querySelector('.card__list');
 
-searchForm.addEventListener('submit', onSearch);
+// searchForm.addEventListener('submit', onSearch);
 
-cardsApiService.fetchCards().then(data => {
-  renderNormalize(data);
-});
+// cardsApiService.fetchCards().then(data => {
+//   renderNormalize(data);
+// });
 
-function onSearch(e) {
-  e.preventDefault();
-  console.log(e.currentTarget.search.value.trim());
-  cardsApiService.query = e.currentTarget.search.value.trim();
+// function onSearch(e) {
+//   e.preventDefault();
+//   console.log(e.currentTarget.search.value.trim());
+//   cardsApiService.query = e.currentTarget.search.value.trim();
 
-  if (cardsApiService.query === '') {
-    Notiflix.Notify.info('Enter your request in the search');
-    return;
-  }
+//   if (cardsApiService.query === '') {
+//     Notiflix.Notify.info('Enter your request in the search');
+//     return;
+//   }
 
-  searchForm.reset();
+//   searchForm.reset();
 
-  cardsApiService.fetchCards().then(data => {
-    if (data.length === 0) {
-      appendDeafaultCardMurkup();
-    }
+//   cardsApiService.fetchCards().then(data => {
+//     if (data.length === 0) {
+//       appendDeafaultCardMurkup();
+//     }
 
-    renderNormalize(data);
-    // зняти відповідний клас, що відповідає за активний стан категорії
-  });
+//     renderNormalize(data);
+//     // зняти відповідний клас, що відповідає за активний стан категорії
+//   });
 
-  clearCardsGallery();
-}
+//   clearCardsGallery();
+// }
 
 function appendDeafaultCardMurkup() {
   const markup = `
