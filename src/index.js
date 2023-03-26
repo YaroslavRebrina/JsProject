@@ -11,3 +11,4 @@ import './js/constants';
 import './js/favorite';
 // import './js/weather-widget/user-geolocation';
 // import './js/weather-widget/weather-api-service';
+import './js/pagination/paginationByPopular';
