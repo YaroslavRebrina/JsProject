@@ -31,7 +31,7 @@ function onSearch(e) {
     }
 
     renderNormalize(data);
-    // зняти відповідний клас, що відповідає за активний стан категорії
+  
   });
 
   clearCardsGallery();

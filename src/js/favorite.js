@@ -78,3 +78,6 @@ function favoriteMarkup(callback) {
 }
 
 //closest or stop paitaintion if target `li`
+
+//on click 
+// id => isFavorite
