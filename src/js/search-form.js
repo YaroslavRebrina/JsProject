@@ -11,12 +11,12 @@ const submitBtn = document.querySelector('[type="submit"]');
 const gallery = document.querySelector('.card__list');
 
 searchForm.addEventListener('submit', onSearch);
+cardsApiService.fetchCards().then(data => {
+  renderNormalize(data);
+});
+// export function createGallery() {
 
-export function createGallery() {
-  cardsApiService.fetchCards().then(data => {
-    renderNormalize(data);
-  });
-}
+// }
 
 function onSearch(e) {
   e.preventDefault();
