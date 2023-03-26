@@ -135,6 +135,7 @@ a {
   padding: 5.31px 189px 4.43px 48px;
   border: 1px solid var(--light-theme-text-color);
   border-radius: 20px;
+  background-color: transparent;
 }
 
 .header-input__icon {
@@ -331,32 +332,32 @@ svg {
 
 // Dark theme
 
-.header--dark-theme {
-    background-color: var(--light-theme-text-color);
-}
+// .header--dark-theme {
+//     background-color: var(--light-theme-text-color);
+// }
 
-.header-links__dark-theme {
-  color: var(--dark-theme-text-color);
-}
+// .header-links__dark-theme {
+//   color: var(--dark-theme-text-color);
+// }
 
-.header-input--dark-theme {
+// .header-input--dark-theme {
 
-    background-color: var(--light-theme-text-color);
-    border: 1px solid var(--dark-theme-text-color);
+//     background-color: var(--light-theme-text-color);
+//     border: 1px solid var(--dark-theme-text-color);
 
-}
+// }
 
-.header-input__icon--dark-theme {
-  fill: var(--dark-theme-text-color);
-}
+// .header-input__icon--dark-theme {
+//   fill: var(--dark-theme-text-color);
+// }
 
-.header__theme-select-light--off {
-  color: var(--dark-theme-text-color);
-}
+// .header__theme-select-light--off {
+//   color: var(--dark-theme-text-color);
+// }
 
-.header__theme-select-dark--on {
-  color: var(--main-color-blue);
-}
+// .header__theme-select-dark--on {
+//   color: var(--main-color-blue);
+// }
 
 
 // Dark theme

@@ -1,3 +1,5 @@
+//MStartsev/
+
 import defaultImageUrl from '../../fonts/images/tablet/tablet.png';
 
 const baseUrl = 'https://static01.nyt.com/';
@@ -48,7 +50,7 @@ function objCardNormalize(objItem) {
   //Короткий опис новини
   dataCard.abstract = objItem.abstract;
 
-  if (objItem.multimedia) {
+  if (objItem.multimedia.length) {
     //пошук оптимальної картинки
     const objImage = searchObjImageForCard(objItem.multimedia);
 
@@ -66,7 +68,7 @@ function objCardNormalize(objItem) {
     dataCard.imageUrl = defaultImageUrl;
   }
 
-  dataCard.url = objItem.url;
+  dataCard.url = objItem.url || objItem.web_url;
 
   dataCard.isFavorite = false; //Default
   dataCard.isRead = false; //Default
@@ -75,9 +77,6 @@ function objCardNormalize(objItem) {
 }
 
 function searchObjImageForCard(multimediaObj) {
-  if (/static01.nyt.com/i.test(multimediaObj[0].url)) {
-  }
-
   //сортуємо картинки по розміру
   multimediaObj.sort((a, b) => (a.width > b.width ? 1 : -1));
 
