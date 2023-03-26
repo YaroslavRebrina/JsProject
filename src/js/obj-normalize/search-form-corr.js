@@ -1,8 +1,6 @@
 import Notiflix from 'notiflix';
-// import CardsApiService from './cards-servise-corr';
-import CardsApiService from './cards-service';
-// import { renderNormalize } from './render-normalize';
-import { renderNormalize } from './obj-normalize/render-normalize';
+import CardsApiService from './cards-servise-corr';
+import { renderNormalize } from './render-normalize';
 
 const cardsApiService = new CardsApiService();
 const searchForm = document.querySelector('#search-form');
@@ -17,6 +15,7 @@ cardsApiService.fetchCards().then(data => {
 
 function onSearch(e) {
   e.preventDefault();
+  console.log(e.currentTarget.search.value.trim());
   cardsApiService.query = e.currentTarget.search.value.trim();
 
   if (cardsApiService.query === '') {
@@ -41,7 +40,7 @@ function onSearch(e) {
 function appendDeafaultCardMurkup() {
   const markup = `
   <p>We haven’t found news from this category</p>
-  <img src="../fonts/images/desktop/desktop.png" alt=" ">
+  <img src="../images/desktop/desktop.png" alt=" ">
   `;
   gallery.insertAdjacentHTML('beforeend', markup);
 }
@@ -49,3 +48,11 @@ function appendDeafaultCardMurkup() {
 function clearCardsGallery() {
   gallery.innerHTML = '';
 }
+
+// function dateFormatting(dateString) {
+//   const date = new Date(dateString);
+//   const day = String(date.getDate()).padStart(2, '0');
+//   const month = String(date.getMonth() + 1).padStart(2, '0');
+//   const year = date.getFullYear();
+//   return `${day}/${month}/${year}`;
+// }
