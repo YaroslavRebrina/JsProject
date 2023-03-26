@@ -1,0 +1,47 @@
+body.dark-mode {
+    background-color: #2E2E2E;
+    color: #F4F4F4;
+
+    .header {
+        border-bottom: 1px solid rgba(244, 244, 244, 0.2);
+    }
+
+    .header-input__icon{
+        fill: #F4F4F4;
+    }
+
+    .header-checkbox__icon-light {
+        fill: #5f6775;
+    }
+    
+    .header-checkbox__icon-dark{
+        fill: #4b48db;
+    }
+
+    .header__theme-select-light--on {
+        color: #5f6775;
+    }
+
+    .header__theme-select-dark--off{
+        color: #4b48db;
+    }
+
+    
+}
+
+
+
+.light-text{
+    color: #F4F4F4
+}
+
+.dark-mode .header-input--dark{
+    // background-color: #2E2E2E;
+    border: 1px solid var(--dark-theme-text-color);
+    outline: none;
+    color: #F4F4F4;
+
+    &:focus {
+        outline: 1px solid (white);
+    }
+}
