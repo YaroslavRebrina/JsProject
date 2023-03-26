@@ -11,9 +11,9 @@ const gallery = document.querySelector('.card__list');
 
 searchForm.addEventListener('submit', onSearch);
 
-cardsApiService.fetchCards().then(data => {
-  renderNormalize(data);
-});
+// cardsApiService.fetchCards().then(data => {
+//   renderNormalize(data);
+// });
 
 function onSearch(e) {
   e.preventDefault();
@@ -26,14 +26,14 @@ function onSearch(e) {
 
   searchForm.reset();
 
-  cardsApiService.fetchCards().then(data => {
-    if (data.length === 0) {
-      appendDeafaultCardMurkup();
-    }
+  // cardsApiService.fetchCards().then(data => {
+  //   if (data.length === 0) {
+  //     appendDeafaultCardMurkup();
+  //   }
 
-    renderNormalize(data);
-    // зняти відповідний клас, що відповідає за активний стан категорії
-  });
+  //   // renderNormalize(data);
+  //   // зняти відповідний клас, що відповідає за активний стан категорії
+  // });
 
   clearCardsGallery();
 }

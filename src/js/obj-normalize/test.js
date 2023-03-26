@@ -17,6 +17,6 @@ function testNormalize(data) {
   // заливаємо на сторінку
   const listRender = objList.map(item => card(item)).join('');
 
-  const gallery = document.querySelector('.card__list');
-  gallery.insertAdjacentHTML('beforeend', listRender);
+  // const gallery = document.querySelector('.card__list');
+  // gallery.insertAdjacentHTML('beforeend', listRender);
 }

@@ -7,3 +7,4 @@ import './js/search-form';
 // import { renderNormalize } from './js/obj-normalize/render-normalize';
 import './js/constants';
 import './js/favorite';
+import './js/pagination/paginationByPopular';

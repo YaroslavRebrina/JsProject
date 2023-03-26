@@ -21,7 +21,13 @@ export default class CardsApiService {
         `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=dWr4kZ2eThN3qFyvwxS66Oz0pgO5uwGr`
       )
         .then(response => response.json())
-        .then(responseAfterJson => responseAfterJson);
+        .then(responseAfterJson => {
+          console.log(
+            '🚀 ~ file: cards-service.js:28 ~ CardsApiService ~ fetchMostPopular ~ responseAfterJson:',
+            responseAfterJson
+          );
+          return responseAfterJson;
+        });
     } catch (error) {
       console.error(error);
     }

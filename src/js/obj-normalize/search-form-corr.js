@@ -30,8 +30,8 @@ function onSearch(e) {
       appendDeafaultCardMurkup();
     }
 
-    renderNormalize(data);
-    // зняти відповідний клас, що відповідає за активний стан категорії
+      renderNormalize(data);
+    //   // зняти відповідний клас, що відповідає за активний стан категорії
   });
 
   clearCardsGallery();
