@@ -22,6 +22,10 @@
 
     color: var(--light-theme-text-color);
 
+    @media screen and (max-width: 767px) {
+        margin-right: 14px;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 32px;
         line-height: 44px;
@@ -79,7 +83,7 @@ input.header-input {
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: inline-block;
+        display: block;
         width: 213px;
         height: 31px;
         padding: 5.3px 114px 4.4px 48px;
@@ -135,14 +139,17 @@ a {
 }
 
 .header-input__icon {
-        width: 20px;
-        height: 20px;
+    display: none;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 12px;
 
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
         margin-top: 7px;
         margin-left: 14px;
+        width: 20px;
         height: 19px;
         fill: var(--light-theme-text-color);
     }
@@ -151,7 +158,7 @@ a {
 // Input
 
 
-// Cheakbox
+// Cheackbox
 
 .header-checkbox__list {
     margin-left: auto;
@@ -223,7 +230,7 @@ a {
     }
 }
 
-.switch {
+.header__switch {
     display: none;
     
     @media screen and (min-width:768px) {
@@ -243,11 +250,11 @@ a {
     }
 }
 
-.switch input {
+.header__switch input {
     display: none;
 }
 
-.slider {
+.header__slider {
     width: 40px;
     height: 20px;
 
@@ -262,7 +269,7 @@ a {
     background-color: var(--light-bg-color);
 }
 
-.slider:before {
+.header__slider:before {
     position: absolute;
     content: "";
     height: 16px;
@@ -275,15 +282,15 @@ a {
     transition: .4s;
 }
 
-input:checked+.slider {
+input:checked+.header__slider {
     background-color: var(--switch-on-color);
 }
 
-input:focus+.slider {
+input:focus+.header__slider {
     box-shadow: 0 0 1px var(--switch-on-color);
 }
 
-input:checked+.slider:before {
+input:checked+.header__slider:before {
     background-color: var(--light-bg-color);
 
     -webkit-transform: translateX(26px);
@@ -291,18 +298,18 @@ input:checked+.slider:before {
     transform: translateX(20px);
 }
 
-.slider.round {
+.header__slider.header__slider-round {
     border-radius: 20px;
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-input:checked+.slider.round {
+input:checked+.header__slider.header__slider-round {
     border: 0.6px solid var(--light-bg-color);
 }
 
-.slider.round:before {
+.header__slider.header__slider-round:before {
     border-radius: 50%;
 
     color: var(--light-bg-color);
@@ -313,34 +320,60 @@ svg {
     height: 21px;
 }
 
-// Cheakbox
+// Cheackbox
 
 
-// Dark theme
+// Burger-menu
 
-.header--dark-theme {
-    background-color: var(--light-theme-text-color);
+.header__burger-menu-icon {
+    width: 24px;
+    height: 24px;
 }
 
-.header-links__dark-theme {
-    color: var(--dark-theme-text-color);
+.header__mobile-icon-search {
+    width: 20px;
+    height: 20px;
 }
 
-.header-input--dark-theme {
-    background-color: var(--light-theme-text-color);
-    border: 1px solid var(--dark-theme-text-color);
+// .header__mobile-icon-search:hover input.header-input {
+//     @media screen and (max-width:767px) {
+//         display: block;
+//         width: 173px;
+//         height: 31px;
+//         padding: 5.3px 81px 4.4px 48px;
+//     }
+// }
+
+.header__button-search, .header__button-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-input__icon--dark-theme {
-    fill: var(--dark-theme-text-color);
+.header__button-search {
+    width: 20;
+    height: 20;
 }
 
-.header__theme-select-light--off {
-    color: var(--dark-theme-text-color);
+button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: var(--light-bg-color);
 }
 
-.header__theme-select-dark--on {
-    color: var(--main-color-blue);
+.header__button-list {
+    margin: 0 16px 0 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
-// Dark theme
+.header__button-list--search {
+    margin-right: 14px;
+}
