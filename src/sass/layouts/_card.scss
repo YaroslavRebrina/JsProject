@@ -10,6 +10,13 @@
     1px 5px 6px rgba(12, 7, 27, 0.16);
   transition: all 0.25s;
 
+  & svg {
+    margin-left: 4px;
+    margin-bottom: -3px;
+    width: 16px;
+    height: 16px;
+  }
+
   &__container {
     position: relative;
     width: 288px;
@@ -36,6 +43,8 @@
     font-size: 14px;
     line-height: 1, 35;
     color: #00dd73;
+    stroke: #00dd73;
+    fill: #00dd73;
 
     &--false {
       display: none;
@@ -63,6 +72,7 @@
   }
 
   &__favorite {
+    display: flex;
     position: absolute;
     right: 8px;
     top: 355px;
