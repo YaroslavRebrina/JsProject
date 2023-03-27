@@ -9,6 +9,8 @@ const pagList = document.querySelector('.pagination__list');
 const searchForm = document.querySelector('#search-form');
 const input = document.querySelector('.header-input');
 const searchBtn = document.querySelector('.header-input__icon');
+let stopSearchByClick = false;
+
 const PAGE_SIZE = 9;
 let currentPage = 1;
 cardsApiService.query = input.value.trim().toLowerCase();
@@ -48,16 +50,17 @@ pagList.addEventListener('click', handlePaginationClick);
 function handlePaginationClick(e) {
   e.preventDefault();
   setSearchInitiated();
-
-  const { target } = e;
-  if (target.classList.contains('pagination__page')) {
-    currentPage = Number(target.dataset.page);
-    cardsApiService.fetchCards().then(data => {
-      const news = objNormalize(data);
-      const newsArr = news.map(item => card(item));
-      generatePagination(Math.ceil(news.length / PAGE_SIZE));
-      generateCards(currentPage, newsArr);
-    });
+  if (!stopSearchByClick) {
+    const { target } = e;
+    if (target.classList.contains('pagination__page')) {
+      currentPage = Number(target.dataset.page);
+      cardsApiService.fetchCards().then(data => {
+        const news = objNormalize(data);
+        const newsArr = news.map(item => card(item));
+        generatePagination(Math.ceil(news.length / PAGE_SIZE));
+        generateCards(currentPage, newsArr);
+      });
+    }
   }
 }
 
@@ -67,27 +70,31 @@ const prevButton = document.querySelector('.pag-btn__left');
 nextButton.addEventListener('click', () => {
   setSearchInitiated();
   currentPage++;
-  cardsApiService.fetchCards().then(data => {
-    const news = objNormalize(data);
-    const newsArr = news.map(item => card(item));
-    const pageCount = Math.ceil(news.length / PAGE_SIZE);
-    if (currentPage <= pageCount) {
-      generatePagination(pageCount);
-      generateCards(currentPage, newsArr);
-    }
-  });
+  if (!stopSearchByClick) {
+    cardsApiService.fetchCards().then(data => {
+      const news = objNormalize(data);
+      const newsArr = news.map(item => card(item));
+      const pageCount = Math.ceil(news.length / PAGE_SIZE);
+      if (currentPage <= pageCount) {
+        generatePagination(pageCount);
+        generateCards(currentPage, newsArr);
+      }
+    });
+  }
 });
 
 prevButton.addEventListener('click', () => {
   setSearchInitiated();
   if (currentPage > 1) {
     currentPage--;
-    cardsApiService.fetchCards().then(data => {
-      const news = objNormalize(data);
-      const newsArr = news.map(item => card(item));
-      generatePagination(Math.ceil(news.length / PAGE_SIZE));
-      generateCards(currentPage, newsArr);
-    });
+    if (!stopSearchByClick) {
+      cardsApiService.fetchCards().then(data => {
+        const news = objNormalize(data);
+        const newsArr = news.map(item => card(item));
+        generatePagination(Math.ceil(news.length / PAGE_SIZE));
+        generateCards(currentPage, newsArr);
+      });
+    }
   }
 });
 function generateCards(page, news) {
@@ -114,4 +121,7 @@ function generatePagination(pageCount) {
     `;
     pagList.insertAdjacentHTML('beforeend', paginationItem);
   }
+}
+export function searchStoped() {
+  stopSearchByClick = true;
 }
