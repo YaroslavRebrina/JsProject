@@ -1,3 +1,11 @@
+.card--weather {
+  max-height: 469px;
+  min-height: 0;
+
+  @media screen and (min-width: $tablet) {
+    max-height: 675px;
+  }
+}
 .weather__widget {
   display: flex;
   max-width: 288px;
@@ -6,15 +14,16 @@
   border-radius: 4px;
   color: #ffffff;
   font-family: 'Roboto';
+
   font-weight: 400;
   line-height: 1.17;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 353px;
     height: 675px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 395px;
   }
 }
@@ -31,7 +40,7 @@
     height: 121px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 40px 0;
     & img {
       margin: 90px auto;
@@ -55,7 +64,18 @@
   border-radius: 10px;
   padding: 9px 8px;
 
-  @media screen and (min-width: 768px) {
+  & #location-icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
     padding: 10px 17px;
   }
 }
@@ -70,35 +90,24 @@
     height: 0;
     content: '';
     border: 1px solid #ffffff;
-    left: 23px;
+    left: 54px;
     bottom: 32px;
     transform: rotate(90deg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 64px;
     margin-right: 16px;
     &::after {
       width: 81px;
-      left: 28px;
-      bottom: 40px;
+      left: 62px;
+      bottom: 35px;
     }
   }
 }
 .description {
   font-size: 24px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 36px;
-  }
-}
-
-.location-icon {
-  width: 18px;
-  height: 18px;
-  fill: red;
-  color: blue;
-  @media screen and (min-width: 768px) {
-    width: 27px;
-    height: 27px;
   }
 }
 
@@ -106,7 +115,7 @@
   font-size: 14px;
   line-height: 1.14;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 1.15;
   }
@@ -117,7 +126,7 @@
   line-height: 1.18;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 36px;
   }
 }
