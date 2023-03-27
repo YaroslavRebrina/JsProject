@@ -2,14 +2,14 @@
 @import './base/common';
 @import './base/fonts';
 @import './utils/variables';
-
+@import './layouts/favorite';
 @import './layouts/header';
 @import './layouts/switcher';
 @import './layouts/list-of-cards';
 @import './layouts/weather-card';
-@import './layouts/card';
 @import './layouts/favorite';
 
 @import './layouts/categories';
+@import './layouts/calendar';
 @import './layouts/paginations';
 @import './layouts/footer';

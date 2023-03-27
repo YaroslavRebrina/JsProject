@@ -165,7 +165,8 @@
 
   &__date {
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
+    left: 5px;
     font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 400;
@@ -182,8 +183,8 @@
 
   &__read {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    bottom: 4px;
+    right: 5px;
     font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 400;
