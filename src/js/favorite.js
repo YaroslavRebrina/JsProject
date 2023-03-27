@@ -13,19 +13,17 @@ let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 // let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
 listRef.addEventListener('click', addToFavourites);
-listRef.addEventListener('click', removeFavourite);
+// listRef.addEventListener('click', removeFavourite);
 
 favoriteMarkup(getFavorites());
 
 function addToFavourites(evt) {
-  if (evt.target.nodeName === 'BUTTON') {
+  if (evt.target.nodeName === 'BUTTON' || 'USE' || 'SPAN') {
+    console.log(evt.target);
     const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
       item => item.id === evt.target.closest('li').id
     );
-    if (addedToFavorite.isFavorite === false) {
-      evt.stopImmediatePropagation();
-      console.log(1);
-    }
+
     addedToFavorite.isFavorite = true;
     favouriteNews.push(addedToFavorite);
     localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
