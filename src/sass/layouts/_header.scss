@@ -61,11 +61,14 @@
 }
 
 .header-nav__link:hover {
-  border-bottom: 1px solid var(--main-color-blue);
-}
+  @media screen and (min-width: $tablet) {
+    border-bottom: 1px solid var(--main-color-blue);
+    }
+  }
+  
 
 .header-nav {
-  display: block;
+  display: flex;
   
   margin-top: 24px;
   margin-bottom: 24px;
@@ -91,7 +94,7 @@
 .header-mobile-list {
   @media screen and (max-width: 767px) {
     height: 44px;
-    width: 100%;
+    margin-left: 11%;
   }
   
   display: flex;
@@ -111,8 +114,9 @@
 }
 
 input.header-input {
-  display: none;
-
+    width: 173px;
+    height: 31px;
+    padding: 5px 81px 5px 48px;
   @media screen and (min-width: $tablet) {
     display: block;
     width: 213px;
@@ -136,9 +140,10 @@ a {
 .header-nav__list {
   display: block;
   position: absolute;
-  // width: 100%;
-  margin-top: 68px;
-
+  width: 100%;
+  margin-top: 80%;
+  left: 0;
+  
   @media screen and (min-width: $tablet) {
     position: relative;
     padding: 0;
@@ -172,11 +177,12 @@ a {
 }
 
 .header-input__icon {
-  display: none;
-
-  @media screen and (min-width: $tablet) {
     display: block;
     position: absolute;
+    margin-top: 6px;
+    margin-left: 10px;
+
+  @media screen and (min-width: $tablet) {
     margin-top: 7px;
     margin-left: 14px;
     width: 20px;
@@ -222,6 +228,7 @@ a {
   @media screen and (max-width: 767px) {
     position: absolute;
     bottom: 18px;
+    left: 11%;
   }
 }
 
@@ -407,7 +414,7 @@ button {
   display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 14px;
+    margin-left: auto;
     width: 32px;
     height: 32px;
   
@@ -422,11 +429,10 @@ button {
   fill: var(--light-theme-text-color);
 }
 
-.test {
+.header__link-svg-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-  fill: black;
 }
