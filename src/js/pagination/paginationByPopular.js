@@ -6,6 +6,7 @@ import {
 } from '../weather-widget/user-geolocation';
 
 import CardsApiService from '../cards-service';
+import { RENDERED } from '../constants';
 const newsElement = document.querySelectorAll('.list__card');
 const cardsApiService = new CardsApiService();
 
@@ -22,6 +23,8 @@ let searchInitiated = false;
 if (!searchInitiated) {
   cardsApiService.fetchMostPopular().then(data => {
     const news = objNormalize(data);
+    dataForFavorite = news;
+    localStorage.setItem(RENDERED, JSON.stringify(dataForFavorite));
     const newsArr = news.map(item => card(item));
     const pageCount = Math.ceil(news.length / PAGE_SIZE);
     generateCards(currentPage, newsArr);

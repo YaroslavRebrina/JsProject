@@ -30,7 +30,6 @@ function toggleFavorite(evt) {
 }
 
 function addToFavourites(evt) {
-  console.log(evt.target);
   const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
     item => item.id === evt.target.closest('li').id
   );
