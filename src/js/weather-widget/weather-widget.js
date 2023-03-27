@@ -1,5 +1,7 @@
+
 import { createGallery } from '../search-form';
 import sprite from '../../fonts/images/icons.svg';
+
 const mediaList = {
   mobile: window.matchMedia('(min-width: 320px) and (max-width: 767px)'),
   tablet: window.matchMedia('(min-width: 768px) and (max-width: 1279px)'),
