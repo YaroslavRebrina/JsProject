@@ -1,7 +1,11 @@
+
+import { createGallery } from '../search-form';
+import sprite from '../../fonts/images/icons.svg';
+
 const mediaList = {
   mobile: window.matchMedia('(min-width: 320px) and (max-width: 767px)'),
-  tablet: window.matchMedia('(min-width: 768px) and (max-width: 1199px)'),
-  desktop: window.matchMedia('(min-width: 1200px)'),
+  tablet: window.matchMedia('(min-width: 768px) and (max-width: 1279px)'),
+  desktop: window.matchMedia('(min-width: 1280px)'),
 };
 
 export function checkResult(response) {
@@ -46,8 +50,8 @@ function createMarkup(response) {
       <div class="weather__wrapper weather__wrapper--column">
         <span class="description">${response.weather[0].main}</span>
         <div class="weather__wrapper weather__wrapper--accent">
-          <svg class="location-icon">
-            <use href="./images/icons.svg#icon-location"></use>
+          <svg class="location-icon" id="location-icon">
+            <use href="${sprite}#icon-location"></use>
           </svg>
           <span class="location">${response.name}</span>
         </div>
