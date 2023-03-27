@@ -1,4 +1,3 @@
-import { createGallery } from '../search-form';
 const mediaList = {
   mobile: window.matchMedia('(min-width: 320px) and (max-width: 767px)'),
   tablet: window.matchMedia('(min-width: 768px) and (max-width: 1199px)'),

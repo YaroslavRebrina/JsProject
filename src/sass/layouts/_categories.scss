@@ -1,59 +1,186 @@
+.categories-container {
+  display: flex;
+  margin-top: 28px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+}
+
+.option {
+  padding: 6px 24px;
+}
+
 .categories {
-    // padding-left: 16px;
-    padding-top: 24px;
-    position: relative;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    @media screen and (min-width: 768px) {
-      padding-top: 28px;
-    }
-  }
+  display: flex;
+  gap: 16px;
+  max-height: 44px;
+}
 
-  .categories__list {
-    // list-style: none;
-    display: block;
-  
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
-  }
-  
-  .categories__item {
-    margin-right: 14px;
-  
-    &:last-child {
-      margin-right: 0;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-right: 16px;
-    }
-  }
+.categories__button {
+  background: #f8f8f8;
+  color: #4440f7;
+  border: 1px solid #4440f7;
+  border-radius: 20px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
 
-  .categories__btn {
-    padding: 8px 24px;
-  
-    font-size: 12px;
-    line-height: 1.33;
-    color: var(--main-color-blue);
-  
-    border: 1px solid var(--main-color-blue);
-    border-radius: 20px;
-    background-color: transparent;
-    cursor: pointer;
-  
-    transition: background-color var(--dark-bg-color);
-    transition: color var(--dark-bg-color);
-  
-    &:hover {
-      color: var(--light-bg-color);
-      background-color: var(--main-color-blue);
-    }
-  }
+.categories__button:hover {
+  background: #4440f6;
+  color: #ffffff;
+}
 
- 
+.container__dropdown {
+  margin-left: 16px;
+  z-index: 1;
+}
 
-  
+.select-box {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  position: absolute;
+  // padding: 8px 21px;
+}
+
+.select-box .options-container {
+  background: #f8f8f8;
+  color: #4440f7;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  order: 1;
+}
+
+.selected {
+  padding: 8px 24px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  color: #4440f6;
+  position: relative;
+  border: 1px solid #4440f7;
+  border-radius: 20px;
+
+  order: 0;
+}
+
+.selected:hover {
+  background: #4440f6;
+  color: #ffffff;
+}
+
+.selected::after {
+  content: '';
+  // background: url('../../fonts/images/arrow-down.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 380px;
+  border-radius: 20px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #f8f8f8;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #f8f8f8;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  // padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  text-decoration: underline;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+//
+//
+//
+//
+// .categories {
+//     // padding-left: 16px;
+//     padding-top: 24px;
+//     position: relative;
+
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     @media screen and (min-width: 768px) {
+//       padding-top: 28px;
+//     }
+//   }
+
+//   .categories__list {
+//     // list-style: none;
+//     display: block;
+
+//     @media screen and (min-width: 768px) {
+//       display: flex;
+//     }
+//   }
+
+//   .categories__item {
+//     margin-right: 14px;
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//       margin-right: 16px;
+//     }
+//   }
+
+//   .categories__btn {
+//     padding: 8px 24px;
+
+//     font-size: 12px;
+//     line-height: 1.33;
+//     color: var(--main-color-blue);
+
+//     border: 1px solid var(--main-color-blue);
+//     border-radius: 20px;
+//     background-color: transparent;
+//     cursor: pointer;
+
+//     transition: background-color var(--dark-bg-color);
+//     transition: color var(--dark-bg-color);
+
+//     &:hover {
+//       color: var(--light-bg-color);
+//       background-color: var(--main-color-blue);
+//     }
+//   }
