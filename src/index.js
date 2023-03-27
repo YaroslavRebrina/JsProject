@@ -10,6 +10,5 @@ import './js/switcher';
 // import { renderNormalize } from './js/obj-normalize/render-normalize';
 import './js/constants';
 import './js/favorite';
-// import './js/weather-widget/user-geolocation';
-// import './js/weather-widget/weather-api-service';
+import './js/pagination/paginationBySearch';
 import './js/pagination/paginationByPopular';
