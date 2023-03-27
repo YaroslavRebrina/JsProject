@@ -18,25 +18,6 @@ listRef.addEventListener('click', toggleFavorite);
 
 favoriteMarkup(getFavorites());
 
-function addToFavourites(evt) {
-  console.log(evt.target);
-  const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
-    item => item.id === evt.target.closest('li').id
-  );
-
-  evt.target.closest('button').innerHTML = `<span> Remove from favorite
-        <svg width="16" height="16" class="box__icon remove-icon">
-          <use href="${sprite}#icon-like-active"></use>
-        </svg>
-      </span>`;
-  evt.target.classList.add('liked');
-  addedToFavorite.isFavorite = true;
-  favouriteNews.push(addedToFavorite);
-  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
-  console.log(favouriteNews);
-  return;
-}
-
 function toggleFavorite(evt) {
   if (
     evt.target.nodeName === 'BUTTON' &&
@@ -48,11 +29,35 @@ function toggleFavorite(evt) {
   }
 }
 
-function removeFavourite(evt) {
+function addToFavourites(evt) {
+  console.log(evt.target);
   const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
     item => item.id === evt.target.closest('li').id
   );
-  evt.target.closest('button').innerHTML = `<span>
+
+  evt.target.closest(
+    'button'
+  ).innerHTML = `<span class="span--test"> Remove from favorite
+        <svg width="16" height="16" class="box__icon remove-icon">
+          <use href="${sprite}#icon-like-active"></use>
+        </svg>
+      </span>`;
+
+  evt.target.classList.add('liked');
+
+  addedToFavorite.isFavorite = true;
+  favouriteNews.push(addedToFavorite);
+  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
+  console.log(favouriteNews);
+  return;
+}
+
+function removeFavourite(evt) {
+  console.log(evt.target);
+  const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
+    item => item.id === evt.target.closest('li').id
+  );
+  evt.target.closest('button').innerHTML = `<span class="span--test">
       Add to favorite
         <svg  width="16" heigth="16">
           <use href="${sprite}#icon-like-nonactive"></use>
@@ -62,9 +67,10 @@ function removeFavourite(evt) {
   addedToFavorite.isFavorite = false;
   favouriteNews.filter(item => !addedToFavorite);
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
-  console.log(favouriteNews);
-  if (document.body.classList.contains('.favorite'))
+
+  if (document.body.classList.contains('favorite')) {
     favoriteMarkup(getFavorites());
+  }
 }
 
 //auto markup
@@ -72,7 +78,9 @@ function removeFavourite(evt) {
 export function getFavorites() {
   try {
     return favouriteNews;
-  } catch (e) {}
+  } catch (e) {
+    console.log(error.message);
+  }
 }
 
 export function favoriteMarkup(callback) {
