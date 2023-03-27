@@ -73,11 +73,12 @@
   margin-top: 24px;
   margin-bottom: 24px;
   text-decoration: none;
-  align-items: center;
+  align-items: baseline;
 
   @media screen and (min-width: $tablet) {
     position: relative;
     display: flex;
+    align-items: center;
     margin-top: 32px;
     margin-bottom: 28px;
   }
@@ -88,28 +89,6 @@
 
   @media screen and (min-width: $desktop) {
     margin-top: 28px;
-  }
-}
-
-.header-mobile-list {
-  @media screen and (max-width: 767px) {
-    height: 44px;
-    margin-left: 11%;
-  }
-  
-  display: flex;
-  align-items: center;
-}
-
-.header-nav__sub-list:nth-last-child(n + 2) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-}
-
-.header-nav__sub-list {
-  @media screen and (max-width: 767px) {
-    background-color: var(--main-color-blue);
   }
 }
 
@@ -138,7 +117,7 @@ a {
 }
 
 .header-nav__list {
-  display: block;
+  display: none;
   position: absolute;
   width: 100%;
   margin-top: 80%;
@@ -211,6 +190,7 @@ a {
     fill: var(--switch-on-color);
   }
 }
+
 .header-checkbox__icon-dark {
   display: none;
 
@@ -226,9 +206,7 @@ a {
   margin-right: 16px;
   align-items: center;
   @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: 18px;
-    left: 11%;
+    display: none;
   }
 }
 
@@ -436,3 +414,274 @@ button {
   width: 24px;
   height: 24px;
 }
+
+// Modal window
+
+.modal {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.modal-nav {
+  display: flex;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-right: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 28px;
+  }
+}
+
+.modal-nav__list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin-top: 80%;
+  left: 0;
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 48px;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 102px;
+    gap: 69px;
+    margin-right: 147px;
+  }
+}
+
+.modal-nav__sub-list:nth-last-child(n + 2) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-nav__sub-list {
+  @media screen and (max-width: 767px) {
+    background-color: var(--main-color-blue);
+  }
+}
+
+.modal-mobile-list {
+  @media screen and (max-width: 767px) {
+    height: 44px;
+    margin-left: 11%;
+  }
+
+  display: flex;
+  align-items: center;
+}
+
+.modal__link-icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-theme-text-color);
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.modal-nav__link {
+  font-family: var(--font-family-main);
+  font-style: normal;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--light-theme-text-color);
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.modal__link-icon-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.modal__link-svg-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.modal__theme-select {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: 16px;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 18px;
+    left: 11%;
+  }
+}
+
+.modal-checkbox__icon-light,
+.modal-checkbox__icon-dark {
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.modal-checkbox__icon-light {
+  display: none;
+
+  @media screen and (max-width: 1279px) {
+    display: block;
+    fill: var(--switch-on-color);
+  }
+}
+
+.modal__switch input {
+  display: none;
+}
+
+.modal__switch {
+  position: relative;
+  display: flex;
+
+
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: relative;
+  display: flex;
+  border: 0.6px solid var(--switch-on-color);
+  border-radius: 20px;
+
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+.modal__slider {
+  width: 40px;
+  height: 20px;
+
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: var(--light-bg-color);
+}
+
+.modal__slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+
+  left: 1px;
+  top: 2px;
+  background-color: var(--switch-on-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  @media screen and (min-width: $tablet) {}
+}
+
+input:checked+.modal__slider {
+  background-color: var(--switch-on-color);
+}
+
+input:focus+.modal__slider {
+  box-shadow: 0 0 1px var(--switch-on-color);
+}
+
+input:checked+.modal__slider:before {
+  background-color: var(--light-bg-color);
+
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+.modal__slider.modal__slider-round {
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+input:checked+.modal__slider.modal__slider-round {
+  border: 0.6px solid var(--light-bg-color);
+}
+
+.modal__slider.modal__slider-round:before {
+  border-radius: 50%;
+
+  color: var(--light-bg-color);
+}
+
+.modal-checkbox__icon-dark {
+  display: none;
+
+  @media screen and (max-width: 1279px) {
+    display: block;
+  }
+}
+
+// Modal window
