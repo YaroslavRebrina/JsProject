@@ -18,7 +18,9 @@
     "url": "https://github.com/YaroslavRebrina/js-project/issues"
   },
   "dependencies": {
+    "@uvarov.frontend/vanilla-calendar": "^2.5.1",
     "calendar-dates": "^2.7.2",
+    "flatpickr": "^4.6.13",
     "handlebars": "^4.7.7",
     "modern-normalize": "^1.1.0"
   },
