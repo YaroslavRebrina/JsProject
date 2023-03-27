@@ -1,6 +1,5 @@
 import { objNormalize } from '../obj-normalize/index';
 import { card } from '../card/index';
-
 import {
   positionHandler,
   positionError,
@@ -15,14 +14,17 @@ const pagList = document.querySelector('.pagination__list');
 
 const PAGE_SIZE = 9;
 let currentPage = 1;
+let searchInitiated = false;
 
-cardsApiService.fetchMostPopular().then(data => {
-  const news = objNormalize(data);
-  const newsArr = news.map(item => card(item));
-  const pageCount = Math.ceil(news.length / PAGE_SIZE);
-  generateCards(currentPage, newsArr);
-  generatePagination(pageCount);
-});
+if (!searchInitiated) {
+  cardsApiService.fetchMostPopular().then(data => {
+    const news = objNormalize(data);
+    const newsArr = news.map(item => card(item));
+    const pageCount = Math.ceil(news.length / PAGE_SIZE);
+    generateCards(currentPage, newsArr);
+    generatePagination(pageCount);
+  });
+}
 
 pagList.addEventListener('click', handlePaginationClick);
 
@@ -68,12 +70,14 @@ function handlePaginationClick(e) {
   const { target } = e;
   if (target.classList.contains('pagination__page')) {
     currentPage = Number(target.dataset.page);
-    cardsApiService.fetchMostPopular().then(data => {
-      const news = objNormalize(data);
-      const newsArr = news.map(item => card(item));
-      generateCards(currentPage, newsArr);
-      generatePagination(Math.ceil(news.length / PAGE_SIZE));
-    });
+    if (!searchInitiated) {
+      cardsApiService.fetchMostPopular().then(data => {
+        const news = objNormalize(data);
+        const newsArr = news.map(item => card(item));
+        generateCards(currentPage, newsArr);
+        generatePagination(Math.ceil(news.length / PAGE_SIZE));
+      });
+    }
   }
 }
 
@@ -82,25 +86,33 @@ const prevButton = document.querySelector('.pag-btn__left');
 
 nextButton.addEventListener('click', () => {
   currentPage++;
-  cardsApiService.fetchMostPopular().then(data => {
-    const news = objNormalize(data);
-    const newsArr = news.map(item => card(item));
-    const pageCount = Math.ceil(news.length / PAGE_SIZE);
-    if (currentPage <= pageCount) {
-      generateCards(currentPage, newsArr);
-      generatePagination(pageCount);
-    }
-  });
+  if (!searchInitiated) {
+    cardsApiService.fetchMostPopular().then(data => {
+      const news = objNormalize(data);
+      const newsArr = news.map(item => card(item));
+      const pageCount = Math.ceil(news.length / PAGE_SIZE);
+      if (currentPage <= pageCount) {
+        generateCards(currentPage, newsArr);
+        generatePagination(pageCount);
+      }
+    });
+  }
 });
 
 prevButton.addEventListener('click', () => {
   if (currentPage > 1) {
     currentPage--;
-    cardsApiService.fetchMostPopular().then(data => {
-      const news = objNormalize(data);
-      const newsArr = news.map(item => card(item));
-      generateCards(currentPage, newsArr);
-      generatePagination(Math.ceil(news.length / PAGE_SIZE));
-    });
+    if (!searchInitiated) {
+      cardsApiService.fetchMostPopular().then(data => {
+        const news = objNormalize(data);
+        const newsArr = news.map(item => card(item));
+        generateCards(currentPage, newsArr);
+        generatePagination(Math.ceil(news.length / PAGE_SIZE));
+      });
+    }
   }
 });
+
+export function setSearchInitiated() {
+  searchInitiated = true;
+}
