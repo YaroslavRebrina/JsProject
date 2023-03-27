@@ -20,7 +20,7 @@ export const objNormalize = data => {
   const list = objList.map(objItem => {
     return objCardNormalize(objItem);
   });
-
+  
   return list;
 };
 

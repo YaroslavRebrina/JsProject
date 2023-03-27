@@ -1,77 +1,67 @@
-import { FAVORITE_KEY, FAVORITE_TOTAL } from './constants';
+import { FAVORITE_KEY, FAVORITE_TOTAL, RENDERED } from './constants';
+import { dataForFavorite } from './pagination/paginationByPopular';
+import { card } from './card';
 
 const refs = {
-  listRef: document.querySelector('.favorite__list'),
+  listRef: document.querySelector('.card__list'),
   buttonRef: document.querySelector('.card__favorite'),
+  favListRef: document.querySelector('.favorite__list'),
 };
-const { listRef, buttonRef } = refs;
+const { listRef, buttonRef, favListRef } = refs;
 
 let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
-let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
+// let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
-// favoriteMarkup(getFavorites());
+listRef.addEventListener('click', addToFavourites);
+listRef.addEventListener('click', removeFavourite);
 
-// {
-/* <li id=${id} class='${containerClass}__card card'>
-
-      <div class='card__container'>
-        <img class='card__img' src="${imageUrl}" 
-          alt="${imageAlt ?? abstract}">
-        <span class='card__category'>${category}</span>
-        ${alReadyRead}
-        ${addToFavorite}
-      </div>
-
-      <h2 class='card__title'>${title}</h2>
-      <p class='card__abstract'>${abstract}</p>
-      <span class='card__date'>${date}</span>
-      <a class='card__read' href="${url}">Read more</a>
-
-    </li>`; */
-// }
-
-// functions
-
-// if target = button go to closer li and inner html
-
-//add event listener to butt
-// buttonRef.addEventListener('click', addToFavourites);
+favoriteMarkup(getFavorites());
 
 function addToFavourites(evt) {
-  evt.currentTarget.dataset.id = colletionTotal + 1;
-  evt.currentTarget.dataset.favorite = evt.target.innerHTML;
-  colletionTotal += 1;
-  console.log(1);
-  favouriteNews.push(evt.currentTarget.dataset.favorite);
-  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
-  localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
+  if (evt.target.nodeName === 'BUTTON') {
+    const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
+      item => item.id === evt.target.closest('li').id
+    );
+    if (addedToFavorite.isFavorite === false) {
+      evt.stopImmediatePropagation();
+      console.log(1);
+    }
+    addedToFavorite.isFavorite = true;
+    favouriteNews.push(addedToFavorite);
+    localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
+    console.log(favouriteNews);
+  }
 }
 
 function removeFavourite(evt) {
-  favouriteNews = favouriteNews.filter(
-    item => !item.include(evt.target.dataset.id)
-  );
-  localStorage.setItem(favouriteNews);
-  return favoriteMarkup(getFavorites());
+  if (evt.target.nodeName === 'BUTTON') {
+    if (dataForFavorite === null) {
+      // dataForFavorite = ;
+    }
+    const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
+      item => item.id === evt.target.closest('li').id
+    );
+    addedToFavorite.isFavorite = false;
+    favouriteNews.filter(item => !addedToFavorite);
+    localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
+    console.log(favouriteNews);
+    favoriteMarkup(getFavorites());
+  }
 }
 
 //auto markup
 
 function getFavorites() {
   try {
-    // const favoriteItems = localStorage.getItem(FAVORITE_KEY);
-    return JSON.parse(favouriteNews);
-  } catch (e) {
-    console.log(console.log(e.message));
-  }
+    return favouriteNews;
+  } catch (e) {}
 }
 
 function favoriteMarkup(callback) {
-  const items = callback.map(item => {}); //markup
+  const items = callback.map(item => card(item)); //markup
 
-  const markup = items.join('');
   try {
-    listRef.innerHTML = markup;
+    listRef.innerHTML = items;
   } catch (error) {
     console.log(error.message);
   }

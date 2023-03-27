@@ -1,5 +1,6 @@
 import { objNormalize } from '../obj-normalize/index';
 import { card } from '../card/index';
+import { RENDERED } from '../constants';
 
 import CardsApiService from '../cards-service';
 const newsElement = document.querySelectorAll('.list__card');
@@ -7,12 +8,22 @@ const cardsApiService = new CardsApiService();
 
 const cardList = document.querySelector('.card__list');
 const pagList = document.querySelector('.pagination__list');
+///
+export let dataForFavorite = null;
 
+///
 const PAGE_SIZE = 9;
 let currentPage = 1;
 
 cardsApiService.fetchMostPopular().then(data => {
+  if (document.body.classList.contains('favorite')) {
+    return;
+  }
   const news = objNormalize(data);
+  /// FOR FAFORITE
+  dataForFavorite = news;
+  localStorage.setItem(RENDERED, JSON.stringify(dataForFavorite));
+  ///
   const newsArr = news.map(item => card(item));
   const pageCount = Math.ceil(news.length / PAGE_SIZE);
   generateCards(currentPage, newsArr);
@@ -59,6 +70,7 @@ function handlePaginationClick(e) {
       const news = objNormalize(data);
       const newsArr = news.map(item => card(item));
       generateCards(currentPage, newsArr);
+
       generatePagination(Math.ceil(news.length / PAGE_SIZE));
     });
   }
