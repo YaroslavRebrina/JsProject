@@ -21,7 +21,11 @@ function appendCategoriesButtonsMarkup(data) {
   const markupButtons = docs
     .map(({ display_name }, i) => {
       if (i <= 5) {
-        return `<button type="button" class="categories__button">${display_name}</button>`;
+        return `
+          <button type="button" class="categories__button">
+            ${display_name}
+          </button>
+        `;
       }
     })
     .join('');
@@ -38,15 +42,17 @@ function appendCategoriesButtonsMarkup(data) {
     })
     .join('');
   selectBody.insertAdjacentHTML('beforeend', markupSelect);
+
+  const optionsList = document.querySelectorAll('.option');
+  optionsList.forEach(i => {
+    i.addEventListener('click', () => {
+      console.log('click');
+      selected.innerHTML = i.querySelector('label').innerHTML;
+      optionsContainer.classList.remove('active');
+    });
+  });
 }
 
 selected.addEventListener('click', () => {
   optionsContainer.classList.add('active');
-});
-
-optionsList.forEach(i => {
-  i.addEventListener('click', () => {
-    selected.innerHTML = i.querySelector('label').innerHTML;
-    optionsContainer.classList.remove('active');
-  });
 });
