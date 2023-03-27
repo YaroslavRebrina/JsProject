@@ -338,7 +338,7 @@ svg {
 
 // Burger-menu
 
-.header__button-list {
+.modal__button-list {
   position: absolute;
   top: 24px;
   right: 16px;
@@ -358,12 +358,12 @@ button {
   background-color: var(--light-bg-color);
 }
 
-.header__burger-menu-icon {
+.modal__burger-menu-icon {
   width: 24px;
   height: 24px;
 }
 
-.header__button-list--search {
+.modal__button-list--search {
   margin-right: 14px;
 }
 
@@ -371,21 +371,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header__link-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 14px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid var(--dark-theme-text-color);
-  
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
 }
 
 .header__link-icon-arrow {
@@ -401,7 +386,7 @@ button {
     }
 }
 
-.header__burger-menu-close {
+.modal__burger-menu-close {
   width: 24px;
   height: 24px;
   fill: var(--light-theme-text-color);
