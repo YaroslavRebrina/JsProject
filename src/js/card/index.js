@@ -50,11 +50,14 @@ export function card(data, containerClass) {
     )}'>${alReadyReadText}</span>`;
 
     const isFavoriteFalse = isFavorite =>
-      isFavorite ? `class='favorite__text--false'` : '';
+      isFavorite
+        ? `class='span--test favorite__text--false'`
+        : 'class="span--test"';
 
     const addToFavorite = `<button type='button' class='card__favorite'>
 
-      <span ${isFavoriteFalse(isFavorite)}>Add to favorite
+      <span ${isFavoriteFalse(isFavorite)}>
+      Add to favorite
         <svg  width="16" heigth="16">
           <use href="${sprite}#icon-like-nonactive"></use>
         </svg>
