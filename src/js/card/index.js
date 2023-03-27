@@ -29,16 +29,18 @@ export function card(data, containerClass) {
     isRead = false,
   } = data;
 
+  const dateRepl = /((\d){4})-((\d){2})-((\d){2})(\S)*/g;
+  const renderDate = date.replace(dateRepl, '$5/$3/$1');
+
   return createCardElement(containerClass);
 
   function createCardElement(containerClass = 'list') {
-    console.log(isFavorite);
     const alReadyReadText =
       containerClass === 'read' //прописати class ul для стор. Read
         ? 'Have read'
         : `Already read 
         <svg width="18" height="18">
-          <use href="./images/icons.svg#icon-read"></use>
+          <use href="${sprite}#icon-read"></use>
         </svg>`;
 
     const alReadyReadFalse = isRead => (!isRead ? `card__already--false` : '');
@@ -49,12 +51,12 @@ export function card(data, containerClass) {
 
     const isFavoriteFalse = isFavorite =>
       isFavorite ? `class='favorite__text--false'` : '';
-    console.log(isFavorite, isFavoriteFalse(isFavorite));
+
     const addToFavorite = `<button type='button' class='card__favorite'>
 
       <span ${isFavoriteFalse(isFavorite)}>Add to favorite
         <svg  width="16" heigth="16">
-          <use href="${sprite}#icon-like-active"></use>
+          <use href="${sprite}#icon-like-nonactive"></use>
         </svg>
       </span>
 
@@ -79,8 +81,8 @@ export function card(data, containerClass) {
 
       <h2 class='card__title'>${title}</h2>
       <p class='card__abstract'>${abstract}</p>
-      <span class='card__date'>${date}</span>
-      <a class='card__read' href="${url}">Read more</a>
+      <span class='card__date'>${renderDate}</span>
+      <a class='card__read' href="${url}" target="_blank">Read more</a>
 
     </li>`;
   }
