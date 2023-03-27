@@ -1,77 +1,93 @@
-import { FAVORITE_KEY, FAVORITE_TOTAL } from './constants';
+import { FAVORITE_KEY, FAVORITE_TOTAL, RENDERED } from './constants';
+import { dataForFavorite } from './pagination/paginationByPopular';
+import { card } from './card';
 
+import sprite from '../fonts/images/icons.svg';
 const refs = {
-  listRef: document.querySelector('.favorite__list'),
+  listRef: document.querySelector('.card__list'),
   buttonRef: document.querySelector('.card__favorite'),
+  favListRef: document.querySelector('.favorite__list'),
 };
-const { listRef, buttonRef } = refs;
+const { listRef, buttonRef, favListRef } = refs;
 
 let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
-let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
+// let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
-// favoriteMarkup(getFavorites());
+listRef.addEventListener('click', toggleFavorite);
+// listRef.addEventListener('click', removeFavourite);
 
-// {
-/* <li id=${id} class='${containerClass}__card card'>
+favoriteMarkup(getFavorites());
 
-      <div class='card__container'>
-        <img class='card__img' src="${imageUrl}" 
-          alt="${imageAlt ?? abstract}">
-        <span class='card__category'>${category}</span>
-        ${alReadyRead}
-        ${addToFavorite}
-      </div>
-
-      <h2 class='card__title'>${title}</h2>
-      <p class='card__abstract'>${abstract}</p>
-      <span class='card__date'>${date}</span>
-      <a class='card__read' href="${url}">Read more</a>
-
-    </li>`; */
-// }
-
-// functions
-
-// if target = button go to closer li and inner html
-
-//add event listener to butt
-// buttonRef.addEventListener('click', addToFavourites);
+function toggleFavorite(evt) {
+  if (
+    evt.target.nodeName === 'BUTTON' &&
+    !evt.target.classList.contains('liked')
+  ) {
+    addToFavourites(evt);
+  } else {
+    removeFavourite(evt);
+  }
+}
 
 function addToFavourites(evt) {
-  evt.currentTarget.dataset.id = colletionTotal + 1;
-  evt.currentTarget.dataset.favorite = evt.target.innerHTML;
-  colletionTotal += 1;
-  console.log(1);
-  favouriteNews.push(evt.currentTarget.dataset.favorite);
+  console.log(evt.target);
+  const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
+    item => item.id === evt.target.closest('li').id
+  );
+
+  evt.target.closest(
+    'button'
+  ).innerHTML = `<span class="span--test"> Remove from favorite
+        <svg width="16" height="16" class="box__icon remove-icon">
+          <use href="${sprite}#icon-like-active"></use>
+        </svg>
+      </span>`;
+
+  evt.target.classList.add('liked');
+
+  addedToFavorite.isFavorite = true;
+  favouriteNews.push(addedToFavorite);
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
-  localStorage.setItem(FAVORITE_TOTAL, colletionTotal);
+  console.log(favouriteNews);
+  return;
 }
 
 function removeFavourite(evt) {
-  favouriteNews = favouriteNews.filter(
-    item => !item.include(evt.target.dataset.id)
+  console.log(evt.target);
+  const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
+    item => item.id === evt.target.closest('li').id
   );
-  localStorage.setItem(favouriteNews);
-  return favoriteMarkup(getFavorites());
+  evt.target.closest('button').innerHTML = `<span class="span--test">
+      Add to favorite
+        <svg  width="16" heigth="16">
+          <use href="${sprite}#icon-like-nonactive"></use>
+        </svg>
+      </span>`;
+  evt.target.classList.remove('liked');
+  addedToFavorite.isFavorite = false;
+  favouriteNews.filter(item => !addedToFavorite);
+  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
+
+  if (document.body.classList.contains('favorite')) {
+    favoriteMarkup(getFavorites());
+  }
 }
 
 //auto markup
 
-function getFavorites() {
+export function getFavorites() {
   try {
-    // const favoriteItems = localStorage.getItem(FAVORITE_KEY);
-    return JSON.parse(favouriteNews);
+    return favouriteNews;
   } catch (e) {
-    console.log(console.log(e.message));
+    console.log(error.message);
   }
 }
 
-function favoriteMarkup(callback) {
-  const items = callback.map(item => {}); //markup
+export function favoriteMarkup(callback) {
+  const items = callback.map(item => card(item)); //markup
 
-  const markup = items.join('');
   try {
-    listRef.innerHTML = markup;
+    listRef.innerHTML = items;
   } catch (error) {
     console.log(error.message);
   }

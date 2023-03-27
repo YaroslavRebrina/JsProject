@@ -2,7 +2,7 @@
 
 export const FAVORITE_KEY = "Favorites"
 export const FAVORITE_TOTAL = "favorites-total"
-
+export const RENDERED = "rendered"
 
 // read.js constants
 

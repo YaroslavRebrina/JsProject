@@ -11,7 +11,10 @@ const cardsApiService = new CardsApiService();
 
 const cardList = document.querySelector('.card__list');
 const pagList = document.querySelector('.pagination__list');
+///
+export let dataForFavorite = null;
 
+///
 const PAGE_SIZE = 9;
 let currentPage = 1;
 let searchInitiated = false;
