@@ -1,5 +1,4 @@
-
-import { createGallery } from '../search-form';
+// import { createGallery } from '../search-form';
 import sprite from '../../fonts/images/icons.svg';
 
 const mediaList = {
