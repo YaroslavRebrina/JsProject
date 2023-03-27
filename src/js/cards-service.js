@@ -3,7 +3,7 @@ export default class CardsApiService {
     this.searchQuery = '';
   }
 
-  fetchCards(searchQuery) {
+  fetchCards() {
     try {
       return fetch(
         `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${this.searchQuery}&api-key=dWr4kZ2eThN3qFyvwxS66Oz0pgO5uwGr`

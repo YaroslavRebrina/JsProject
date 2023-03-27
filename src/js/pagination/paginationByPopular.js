@@ -1,6 +1,11 @@
 import { objNormalize } from '../obj-normalize/index';
 import { card } from '../card/index';
 
+import {
+  positionHandler,
+  positionError,
+} from '../weather-widget/user-geolocation';
+
 import CardsApiService from '../cards-service';
 const newsElement = document.querySelectorAll('.list__card');
 const cardsApiService = new CardsApiService();
@@ -28,11 +33,19 @@ function generateCards(page, news) {
 
   for (let i = startIndex; i < endIndex; i++) {
     const dataCard = news[i];
-    // if (!dataCard) {
-    //   continue;
-    // }
-    // const dataCardHtml = card(dataCard);
-    cardList.insertAdjacentHTML('beforeend', dataCard);
+    if (i === 2) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          positionHandler,
+          positionError,
+          () => {
+            cardList.insertAdjacentHTML('beforeend', card({ type: 'widget' }));
+          }
+        );
+      }
+    } else {
+      cardList.insertAdjacentHTML('beforeend', dataCard);
+    }
   }
 }
 
