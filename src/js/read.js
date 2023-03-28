@@ -13,7 +13,10 @@ try {
 
   sortedNews.forEach(news => {
     if (news.isRead === true) {
-      const newsDate = new Date(news.date).toLocaleDateString();
+      const newsDate = new Date(news.date)
+        .toLocaleDateString()
+        .replace(/\./g, '/');
+      console.log('🚀 ~ file: read.js:17 ~ newsDate:', newsDate);
 
       if (!accordionItems[newsDate]) {
         const accordionItem = document.createElement('div');

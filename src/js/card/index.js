@@ -3,12 +3,12 @@
 //  => .response || .results => itemCard
 
 // id; //string => 'uri'
-// category; //string => "section"
-// title; //string =>
-// abstract; //string =>
-// imageUrl; //string =>
-// imageAlt; //string =>
-// section; //string =>
+// category; //string
+// title; //string
+// abstract; //string
+// imageUrl; //string
+// imageAlt; //string
+// section; //string
 // url; //string =>
 
 // isFavorite; //boolean => 'false' || localStorage FAVORITE*
@@ -40,7 +40,7 @@ export function card(data, containerClass) {
         ? 'Have read'
         : `Already read 
         <svg width="18" height="18">
-          <use href="${sprite}#icon-read"></use>
+          <use href="${sprite}#icon-check"></use>
         </svg>`;
 
     const alReadyReadFalse = isRead => (!isRead ? `card__already--false` : '');
@@ -72,7 +72,9 @@ export function card(data, containerClass) {
     </button>`;
 
     return `
-    <li id=${id} class='${containerClass}__card card'>
+    <li id=${id} class='${containerClass}__card card ${
+      isRead ? 'card--opacity' : ''
+    }'>
 
       <div class='card__container'>
         <img class='card__img' src="${imageUrl}" 

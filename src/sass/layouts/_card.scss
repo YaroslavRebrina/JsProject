@@ -1,5 +1,29 @@
 /*MStartsev*/
 
+@keyframes beat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(1.25);
+    animation-timing-function: ease-in;
+  }
+  15% {
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: scale(1.15);
+    animation-timing-function: ease-in;
+  }
+  35% {
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+}
+
 .card {
   position: relative;
   display: block;
@@ -28,6 +52,7 @@
     margin-bottom: -3px;
     width: 16px;
     height: 16px;
+    // animation: beat 1s infinite;
   }
 
   &__container {
@@ -63,7 +88,7 @@
 
   &__already {
     position: absolute;
-    left: 70%;
+    right: 15px;
     top: 14px;
 
     font-family: var(--font-family-main);
@@ -72,7 +97,9 @@
     font-size: 14px;
     line-height: 1.35;
     color: #00dd73;
-    fill: #00dd73;
+
+    text-shadow: 0px 0px 10px rgb(2, 2, 2), 0px 0px 2px rgb(24, 13, 13),
+      0 10em 2em rgb(224, 228, 30), 2em 2em 20em rgb(162, 162, 163);
 
     &--false {
       display: none;
@@ -119,6 +146,10 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+
+    & svg {
+      animation: beat 1s infinite;
+    }
   }
 
   &__title {
