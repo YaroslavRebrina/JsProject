@@ -63,7 +63,7 @@
 
   &__already {
     position: absolute;
-    left: 167px;
+    left: 70%;
     top: 14px;
 
     font-family: var(--font-family-main);
@@ -209,5 +209,5 @@
 }
 
 .span--test {
-  pointer-events: none; 
+  pointer-events: none;
 }

@@ -117,6 +117,6 @@ function appendCategoriesButtonsMarkup(data) {
   }
 }
 
-selected.addEventListener('click', () => {
-  optionsContainer.classList.add('active');
-});
+// selected.addEventListener('click', () => {
+//   optionsContainer.classList.add('active');
+// });

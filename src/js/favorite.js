@@ -1,5 +1,5 @@
 import { FAVORITE_KEY, FAVORITE_TOTAL, RENDERED } from './constants';
-import { dataForFavorite } from './pagination/paginationByPopular';
+// import { dataForFavorite } from './pagination/paginationByPopular';
 import { card } from './card';
 
 import sprite from '../fonts/images/icons.svg';
@@ -91,5 +91,3 @@ export function favoriteMarkup(callback) {
     console.log(error.message);
   }
 }
-
-//closest or stop paitaintion if target `li`
