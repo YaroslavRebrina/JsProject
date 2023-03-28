@@ -26,7 +26,6 @@ export const objNormalize = data => {
 
   list = replaceObjectsById(list, FAVORITE_KEY);
   objDateSort(list);
-  console.log(list);
 
   return list;
 };

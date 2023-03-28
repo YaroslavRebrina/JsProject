@@ -19,8 +19,6 @@ listRef.addEventListener('click', toggleFavorite);
 favoriteMarkup(getFavorites());
 
 function toggleFavorite(evt) {
-  evt.preventDefault();
-
   if (evt.target.nodeName === 'BUTTON')
     if (!evt.target.classList.contains('liked')) {
       addToFavourites(evt);
@@ -37,6 +35,8 @@ function addToReads(evt) {
   const addedToRead = JSON.parse(localStorage.getItem(RENDERED)).find(
     item => item.id === evt.target.closest('li').id
   );
+  const elemOpacity = evt.target.closest('li');
+  elemOpacity.classList.add('card--opacity');
 
   const elem = evt.target.closest('li').querySelector('.card__already');
 
@@ -90,8 +90,6 @@ function addToFavourites(evt) {
     favouriteNews.push(addedToFavorite);
   }
 
-  // addedToFavorite.isFavorite = true;
-  // favouriteNews.push(addedToFavorite);
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
 
   return;
