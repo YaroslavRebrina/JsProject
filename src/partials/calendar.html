@@ -1,64 +1,26 @@
-<!-- <html>
-  <head>
-    <meta charset="utf-8" />
-    <link href="./sass/layouts/_calendar.scss" rel="stylesheet" />
-  </head>
+<div class="calendar" id="calendar">
+  <label for="start" class="search">Search date news</label>
 
-  <body>
-    <label for="start" class="start">Search date news</label>
-
+  <form>
     <input
-      type="date"
-      id="start"
-      name="trip-start"
-      value="2018-07-22"
-      min="2018-01-01"
-      max="2018-12-31"
+      class="form-control"
+      type="datetime-local"
+      placeholder="Select DateTime"
     />
+    <a class="input-button" title="toggle" data-toggle>
+      <i class="icon-calendar"></i>
+    </a>
+  </form>
+</div>
 
-    <script type="module" src="./js/calendar/index.js"></script>
-  </body>
-</html> -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <script
-      src="/node_modules/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <div id="calendar">
-      <label for="start" class="search">Search date news</label>
-
-      <form>
-        <input
-          class="form-control"
-          type="datetime-local"
-          placeholder="Select DateTime"
-        />
-        <a class="input-button" title="toggle" data-toggle>
-          <i class="icon-calendar"></i>
-        </a>
-      </form>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-    <script>
-      config = {
-        dateFormat: 'd/m/Y',
-        // clickOpens: false,
-        // wrap: true,
-        // altInput: true,
-      };
-      flatpickr('input[type=datetime-local]', config);
-    </script>
-  </body>
-</html>
+<script>
+  config = {
+    dateFormat: 'd/m/Y',
+    // clickOpens: false,
+    // wrap: true,
+    // altInput: true,
+  };
+  flatpickr('input[type=datetime-local]', config);
+</script>
