@@ -1,26 +1,31 @@
-<div class="calendar" id="calendar">
-  <label for="start" class="search">Search date news</label>
+    <div class="calendar container" id="calendar">
+      <label for="start" class="search">Search date news</label>
 
-  <form>
-    <input
-      class="form-control"
-      type="datetime-local"
-      placeholder="Select DateTime"
-    />
-    <a class="input-button" title="toggle" data-toggle>
-      <i class="icon-calendar"></i>
-    </a>
-  </form>
-</div>
+      <form action="#" class="form flatpickr-input">
+        <div class="flatpickr">
+          <a
+            class="input-button input-button-calendar"
+            aria-hidden="true"
+            title="toggle"
+            data-toggle
+          >
+            <svg class="icon-calendar" width="" height="" viewbox="">
+              <use href="/src/fonts/images/icons.svg#icon-calendar"></use>
+            </svg>
+          </a>
+          <input class="form-control flatpickr-input" type="datetime-local" placeholder="" />
+         <a
+            class="icon-button icon-button-calendar"
+            aria-hidden="true"
+            title="toggle"
+            data-toggle
+          >
+          <svg class="icon-arrow-down" width="" height="" viewbox="">
+            <use href="/src/fonts/images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>        
+      </form>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-<script>
-  config = {
-    dateFormat: 'd/m/Y',
-    // clickOpens: false,
-    // wrap: true,
-    // altInput: true,
-  };
-  flatpickr('input[type=datetime-local]', config);
-</script>
+
