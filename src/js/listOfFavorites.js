@@ -3,10 +3,11 @@ import { FAVORITE_KEY } from './constants';
 
 try {
   const favoriteContainer = document.querySelector('.favorite__list');
+  const favoriteError = document.querySelector('.favorite__error');
 
   const readNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
-  if (readNews) {
-    favoriteContainer.innerHTML = '';
+  if (readNews.length > 0) {
+    favoriteError.style.display = 'none';
     readNews.forEach(news => {
       if (news.isFavorite === true) {
         const readNewsMarkup = card(news);
