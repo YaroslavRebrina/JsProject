@@ -26,17 +26,15 @@ let currentPage = 1;
 let cancelSearchPopular = true;
 
 if (cancelSearchPopular) {
-  cardsApiService
-    .fetchMostPopular()
-    .then(data => {
-      const news = objNormalize(data);
-      dataForFavorite = news;
-      localStorage.setItem(RENDERED, JSON.stringify(dataForFavorite));
-      const newsArr = news.map(item => card(item));
-      const pageCount = Math.ceil(news.length / PAGE_SIZE);
-      generateCards(currentPage, newsArr);
-      generatePagination(pageCount);
-    });
+  cardsApiService.fetchMostPopular().then(data => {
+    const news = objNormalize(data);
+    dataForFavorite = news;
+    localStorage.setItem(RENDERED, JSON.stringify(dataForFavorite));
+    const newsArr = news.map(item => card(item));
+    const pageCount = Math.ceil(news.length / PAGE_SIZE);
+    generateCards(currentPage, newsArr);
+    generatePagination(pageCount);
+  });
 }
 
 pagList.addEventListener('click', handlePaginationClick);
@@ -74,7 +72,7 @@ function generatePagination(pageCount) {
         <a href="#" class="pagination__page ${isActive}" data-page="${i}">${i}</a>
       </li>
     `;
-    refs.pagList.insertAdjacentHTML('beforeend', paginationItem);
+    pagList.insertAdjacentHTML('beforeend', paginationItem);
   }
 }
 
