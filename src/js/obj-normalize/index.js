@@ -1,6 +1,9 @@
 //MStartsev/
+import { FAVORITE_KEY } from '../constants';
 
 import defaultImageUrl from '../../fonts/images/tablet/tablet.png';
+
+import { replaceObjectsById, objDateSort } from './obj-date-sort';
 
 const baseUrl = 'https://static01.nyt.com/';
 const windowInnerWidth = document.documentElement.clientWidth; // ширина сторінки
@@ -17,10 +20,13 @@ export const objNormalize = data => {
     console.log('Response ERROR!!!');
   }
 
-  const list = objList.map(objItem => {
+  let list = objList.map(objItem => {
     return objCardNormalize(objItem);
   });
-  
+
+  list = replaceObjectsById(list, FAVORITE_KEY);
+  objDateSort(list);
+
   return list;
 };
 
