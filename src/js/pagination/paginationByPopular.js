@@ -4,21 +4,32 @@ import {
   positionHandler,
   positionError,
 } from '../weather-widget/user-geolocation';
-
 import CardsApiService from '../cards-service';
-const newsElement = document.querySelectorAll('.list__card');
-const cardsApiService = new CardsApiService();
+import { RENDERED } from '../constants';
 
+const cardsApiService = new CardsApiService();
 const cardList = document.querySelector('.card__list');
 const pagList = document.querySelector('.pagination__list');
+export let dataForFavorite = null;
 
-const PAGE_SIZE = 9;
+let PAGE_SIZE = 4;
+
+if (window.innerWidth >= 320 && window.innerWidth <= 767) {
+  PAGE_SIZE = 5;
+} else if (window.innerWidth >= 768 && window.innerWidth <= 1279) {
+  PAGE_SIZE = 8;
+} else {
+  PAGE_SIZE = 9;
+}
+
 let currentPage = 1;
-let searchInitiated = false;
+let cancelSearchPopular = true;
 
-if (!searchInitiated) {
+if (cancelSearchPopular) {
   cardsApiService.fetchMostPopular().then(data => {
     const news = objNormalize(data);
+    dataForFavorite = news;
+    localStorage.setItem(RENDERED, JSON.stringify(dataForFavorite));
     const newsArr = news.map(item => card(item));
     const pageCount = Math.ceil(news.length / PAGE_SIZE);
     generateCards(currentPage, newsArr);
@@ -66,11 +77,12 @@ function generatePagination(pageCount) {
 }
 
 function handlePaginationClick(e) {
-  e.preventDefault();
-  const { target } = e;
-  if (target.classList.contains('pagination__page')) {
-    currentPage = Number(target.dataset.page);
-    if (!searchInitiated) {
+  if (cancelSearchPopular) {
+    e.preventDefault();
+    const { target } = e;
+    if (target.classList.contains('pagination__page')) {
+      currentPage = Number(target.dataset.page);
+
       cardsApiService.fetchMostPopular().then(data => {
         const news = objNormalize(data);
         const newsArr = news.map(item => card(item));
@@ -78,6 +90,8 @@ function handlePaginationClick(e) {
         generatePagination(Math.ceil(news.length / PAGE_SIZE));
       });
     }
+  } else {
+    return;
   }
 }
 
@@ -85,8 +99,8 @@ const nextButton = document.querySelector('.pag-btn__right');
 const prevButton = document.querySelector('.pag-btn__left');
 
 nextButton.addEventListener('click', () => {
-  currentPage++;
-  if (!searchInitiated) {
+  if (cancelSearchPopular) {
+    currentPage++;
     cardsApiService.fetchMostPopular().then(data => {
       const news = objNormalize(data);
       const newsArr = news.map(item => card(item));
@@ -96,13 +110,15 @@ nextButton.addEventListener('click', () => {
         generatePagination(pageCount);
       }
     });
+  } else {
+    return;
   }
 });
 
 prevButton.addEventListener('click', () => {
-  if (currentPage > 1) {
-    currentPage--;
-    if (!searchInitiated) {
+  if (cancelSearchPopular) {
+    if (currentPage > 1) {
+      currentPage--;
       cardsApiService.fetchMostPopular().then(data => {
         const news = objNormalize(data);
         const newsArr = news.map(item => card(item));
@@ -110,9 +126,11 @@ prevButton.addEventListener('click', () => {
         generatePagination(Math.ceil(news.length / PAGE_SIZE));
       });
     }
+  } else {
+    return;
   }
 });
 
-export function setSearchInitiated() {
-  searchInitiated = true;
+export function searchCancelation() {
+  cancelSearchPopular = false;
 }

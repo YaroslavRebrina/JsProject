@@ -1,98 +1,146 @@
-<header class="header container">
-  <nav class="header-nav">
-    <a
-      class="header-nav__logo-link"
-      href="./index.html"
-      target="_blank"
-      rel="noopener noreferrer"
-      >News</a
-    >
-    <ul class="header-nav__list">
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href="./index.html"
-          target="_blank"
+<header class="header">
+  <div class="container backdrop">
+    <div class="header__wrapper">
+      <nav class="header-nav">
+        <a class="header-nav__logo-link" 
+          href="./index.html" 
           rel="noopener noreferrer"
-        >
-          Home</a
-        >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href="./favorite.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Favorite</a
-        >
-      </li>
-      <li class="header-nav__list-item">
-        <a
-          class="header-nav__link"
-          href="./read.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Read
-        </a>
-      </li>
-    </ul>
-    <!-- <form id="search-form">
-      <label for="header-label__input">
-        <svg class="header-input__icon">
-          <use href="./fonts/images/icons.svg#icon-search"></use>
+          >News</a>
+        <ul class="header-nav__list">
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" 
+              href="./index.html" 
+              rel="noopener noreferrer"
+              >Home</a>
+          </li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" 
+              href="./favorite.html" 
+              rel="noopener noreferrer"
+              >Favorite</a>
+          </li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" 
+              href="./read.html" 
+              rel="noopener noreferrer"
+              >Read</a>
+          </li>
+        </ul>
+        <form id="search-form">
+          <label for="header-label__input">
+            <svg class="header-input__icon">
+              <use href="./fonts/images/icons.svg#icon-search"></use>
+            </svg>
+            <input class="header-input" type="text" name="search" placeholder="Search  |" />
+          </label>
+        </form>
+      </nav>
+      <div class="modal">
+        <nav class="modal-nav">
+          <ul class="modal-nav__list">
+            <li class="modal-nav__sub-list">
+              <ul class="modal-mobile-list">
+                <li class="modal-icon-item">
+                  <svg class="modal__link-icon">
+                    <use href="./fonts/images/icons.svg#icon-home"></use>
+                  </svg>
+                </li>
+                <li class="modal-nav__list-item">
+                  <a class="modal-nav__link" href="./index.html" rel="noopener noreferrer">Home</a>
+                </li>
+                <li class="modal__link-icon-arrow">
+                  <svg class="modal__link-svg-arrow">
+                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="modal-nav__sub-list">
+              <ul class="modal-mobile-list">
+                <li class="modal__link-icon-item">
+                  <svg class="modal__link-icon">
+                    <use href="./fonts/images/icons.svg#icon-favorite"></use>
+                  </svg>
+                </li>
+                <li class="modal-nav__list-item">
+                  <a class="modal-nav__link" href="./favorite.html" rel="noopener noreferrer">Favorite</a>
+                </li>
+                <li class="modal__link-icon-arrow">
+                  <svg class="modal__link-svg-arrow">
+                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="modal-nav__sub-list">
+              <ul class="modal-mobile-list">
+                <li class="modal__link-icon-item">
+                  <svg class="modal__link-icon">
+                    <use href="./fonts/images/icons.svg#icon-read"></use>
+                  </svg>
+                </li>
+                <li class="modal-nav__list-item">
+                  <a class="modal-nav__link" href="./read.html" rel="noopener noreferrer">Read</a>
+                </li>
+                <li class="modal__link-icon-arrow">
+                  <svg class="modal__link-svg-arrow">
+                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="modal__theme-select">
+          <svg class="modal-checkbox__icon-light">
+            <use href="./fonts/images/icons.svg#icon-sun"></use>
+          </svg>
+          <label class="modal__switch">
+            <input type="checkbox" class="switch-checkbox" />
+            <span class="modal__slider modal__slider-round"></span>
+          </label>
+          <svg class="modal-checkbox__icon-dark">
+            <use href="./fonts/images/icons.svg#icon-moon"></use>
+          </svg>
+        </div>
+        <ul class="modal__button-list">
+          <li class="modal__button-list--search">
+            <button class="modal__button-search">
+              <svg class="modal__mobile-icon-search">
+                <use href="./fonts/images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="modal__button-list--menu">
+            <button class="modal__button-menu">
+              <svg class="modal__burger-menu-icon">
+                <use href="./fonts/images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="modal__button-list--close">
+            <button class="modal__button-close">
+              <svg class="modal__burger-menu-close">
+                <use href="./fonts/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="header__theme-select">
+        <p class="header__theme-select-light--on">Light</p>
+        <svg class="header-checkbox__icon-light">
+          <use href="./fonts/images/icons.svg#icon-sun"></use>
         </svg>
-        <input
-          class="header-input"
-          type="text"
-          name="search"
-          placeholder="Search  |"
-        />
-      </label>
-    </form> -->
-    <form id="search-form">
-      <label for="header-label__input">
-        <svg class="header-input__icon">
-          <use href="./fonts/images/icons.svg#icon-search"></use>
+        <label class="header__switch">
+          <input type="checkbox" class="switch-checkbox" />
+          <span class="header__slider header__slider-round"></span>
+        </label>
+        <svg class="header-checkbox__icon-dark">
+          <use href="./fonts/images/icons.svg#icon-moon"></use>
         </svg>
-        <input
-          class="header-input"
-          type="text"
-          name="search"
-          placeholder="Search  |"
-        />
-      </label>
-    </form>
-  </nav>
-  <div class="header__theme-select">
-    <p class="header__theme-select-light--on">Light</p>
-    <svg class="header-checkbox__icon-light">
-      <use href="./fonts/images/icons.svg#icon-sun"></use>
-    </svg>
-    <label class="header__switch">
-      <input type="checkbox" class="switch-checkbox" />
-      <span class="header__slider header__slider-round"></span>
-    </label>
-    <svg class="header-checkbox__icon-dark">
-      <use href="./fonts/images/icons.svg#icon-moon"></use>
-    </svg>
-    <p class="header__theme-select-dark--off">Dark</p>
+        <p class="header__theme-select-dark--off">Dark</p>
+      </div>
+    </div>
   </div>
-  <ul class="header__button-list">
-    <li class="header__button-list--search">
-      <button class="header__button-search">
-        <svg class="header__mobile-icon-search">
-          <use href="./fonts/images/icons.svg#icon-search"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="header__button-list--menu">
-      <button class="header__button-menu">
-        <svg class="header__burger-menu-icon">
-          <use href="./fonts/images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </li>
-  </ul>
 </header>
