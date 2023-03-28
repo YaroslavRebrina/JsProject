@@ -35,6 +35,7 @@
           </label>
         </form>
       </nav>
+      <!-- Modal window -->
       <div class="modal">
         <nav class="modal-nav">
           <ul class="modal-nav__list">
@@ -105,21 +106,24 @@
         </div>
         <ul class="modal__button-list">
           <li class="modal__button-list--search">
-            <button class="modal__button-search">
+            <button type="button" class="modal__button-search">
               <svg class="modal__mobile-icon-search">
                 <use href="./fonts/images/icons.svg#icon-search"></use>
               </svg>
             </button>
           </li>
           <li class="modal__button-list--menu">
-            <button class="modal__button-menu">
+            <button type="button" 
+              class="modal__button-menu" 
+              aria-expanded="false" 
+              aria-controls="mobile-menu">
               <svg class="modal__burger-menu-icon">
                 <use href="./fonts/images/icons.svg#icon-menu"></use>
               </svg>
             </button>
           </li>
           <li class="modal__button-list--close">
-            <button class="modal__button-close">
+            <button type="button" class="modal__button-close">
               <svg class="modal__burger-menu-close">
                 <use href="./fonts/images/icons.svg#icon-close"></use>
               </svg>
@@ -127,6 +131,7 @@
           </li>
         </ul>
       </div>
+      <!-- Modal window -->
       <div class="header__theme-select">
         <p class="header__theme-select-light--on">Light</p>
         <svg class="header-checkbox__icon-light">
