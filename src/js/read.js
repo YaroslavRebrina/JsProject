@@ -1,36 +1,57 @@
-import { Accordion } from 'accordion';
 import { card } from './card/index';
-import { READ_NEWS_KEY } from './constants';
+import { FAVORITE_KEY } from './constants';
 
-// перевірка наявності новини в прочитаних
+try {
+  const readContainer = document.querySelector('.card__list');
+  const readNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 
-function isNewsRead(newsId) {
-  const readNews = JSON.parse(localStorage.getItem(READ_NEWS_KEY)) || [];
-  return readNews.some(news => news.id === newsId);
-}
+  const sortedNews = readNews.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
 
-// зберігання прочитаної новини. вішати на кнопку read more
+  const accordionItems = {};
 
-function saveReadNews(newsData) {
-  const readNews = JSON.parse(localStorage.getItem(READ_NEWS_KEY)) || [];
+  sortedNews.forEach(news => {
+    if (news.isRead === true) {
+      const newsDate = new Date(news.date)
+        .toLocaleDateString()
+        .replace(/\./g, '/');
+      console.log('🚀 ~ file: read.js:17 ~ newsDate:', newsDate);
 
-  if (!isNewsRead(newsData.id)) {
-    readNews.push(newsData);
-    localStorage.setItem(READ_NEWS_KEY, JSON.stringify(readNews));
-  } else {
-    const updatedReadNews = readNews.map(news => {
-      if (news.id === newsData.id) {
-        return newsData;
+      if (!accordionItems[newsDate]) {
+        const accordionItem = document.createElement('div');
+        accordionItem.classList.add('accordion__item');
+
+        const accordionHeader = document.createElement('h2');
+        accordionHeader.classList.add('accordion__title');
+        accordionHeader.innerHTML = `${newsDate}<span class="accordion__icon"></span>`;
+
+        const accordionContent = document.createElement('div');
+        accordionContent.classList.add('accordion__content');
+
+        accordionItem.appendChild(accordionHeader);
+        accordionItem.appendChild(accordionContent);
+
+        accordionItems[newsDate] = accordionItem;
+
+        readContainer.appendChild(accordionItem);
       }
-      return news;
+
+      const accordionContent = accordionItems[newsDate].querySelector(
+        '.accordion__content'
+      );
+      const readNewsMarkup = card(news);
+      accordionContent.insertAdjacentHTML('beforeend', readNewsMarkup);
+    }
+  });
+
+  const accordionTitles = document.querySelectorAll('.accordion__title');
+  accordionTitles.forEach(title => {
+    title.addEventListener('click', () => {
+      const accordionItem = title.parentNode;
+      accordionItem.classList.toggle('active');
     });
-    localStorage.setItem(READ_NEWS_KEY, JSON.stringify(updatedReadNews));
-  }
-}
-
-// отримання прочитаних новин
-
-function getReadNews() {
-  const readNews = JSON.parse(localStorage.getItem(READ_NEWS_KEY)) || [];
-  return readNews;
+  });
+} catch (error) {
+  console.log(error);
 }
