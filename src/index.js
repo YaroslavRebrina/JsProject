@@ -8,5 +8,3 @@ import './js/favorite';
 // import './js/pagination/paginationBySearch';
 // import './js/pagination/paginationByPopular';
 // import './js/pagination/panginationByCategory';
-
-import './js/header';
