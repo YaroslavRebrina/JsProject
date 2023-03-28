@@ -1,6 +1,17 @@
+html {
+  position: relative;
+}
+
 footer {
   height: 120px;
   background-color: var(--footer-bg-color);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: $tablet) {
     height: 146px;
