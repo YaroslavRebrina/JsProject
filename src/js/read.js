@@ -3,6 +3,8 @@ import { FAVORITE_KEY } from './constants';
 
 try {
   const readContainer = document.querySelector('.card__list');
+  const readError = document.querySelector('.read__error');
+
   const readNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 
   const sortedNews = readNews.sort(
@@ -13,10 +15,10 @@ try {
 
   sortedNews.forEach(news => {
     if (news.isRead === true) {
+      readError.style.display = 'none';
       const newsDate = new Date(news.date)
         .toLocaleDateString()
         .replace(/\./g, '/');
-      console.log('🚀 ~ file: read.js:17 ~ newsDate:', newsDate);
 
       if (!accordionItems[newsDate]) {
         const accordionItem = document.createElement('div');
@@ -40,7 +42,7 @@ try {
       const accordionContent = accordionItems[newsDate].querySelector(
         '.accordion__content'
       );
-      const readNewsMarkup = card(news);
+      const readNewsMarkup = card(news, 'read');
       accordionContent.insertAdjacentHTML('beforeend', readNewsMarkup);
     }
   });

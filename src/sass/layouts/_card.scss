@@ -242,3 +242,15 @@
 .span--test {
   pointer-events: none;
 }
+.read__error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.favorite__error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
