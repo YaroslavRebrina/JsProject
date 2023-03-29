@@ -1,5 +1,5 @@
 <header class="header">
-  <div class=" header__wrapper">
+  <div class="header__wrapper">
     <nav class="header-nav">
       <a
         class="header-nav__logo-link"
@@ -78,22 +78,25 @@
   data-menu
 >
   <div class="mobile-menu">
-   <div class="wrap">
-    <a class="mobile-logo" href="">News</a>
-    <button class="mobile-menu__button-close js-close-menu" data-menu-close-mob>
-      <svg class="mobile-menu-button__icon">
-        <use href="./fonts/images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-   </div>
-  
+    <div class="wrap">
+      <a class="mobile-logo header-nav__logo-link" href="">News</a>
+      <button
+        class="mobile-menu__button-close js-close-menu"
+        data-menu-close-mob
+      >
+        <svg class="mobile-menu-button__icon">
+          <use href="./fonts/images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="">
+        <a class="mobile-menu__link header-nav__link" href="">
           <svg class="mobile-menu__icon">
             <use href="./fonts/images/icons.svg#icon-home"></use>
           </svg>
-          Home
+          <span>Home</span>
           <svg class="mobile-menu__right-arrow">
             <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
           </svg>
@@ -101,22 +104,22 @@
       </li>
 
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="">
+        <a class="mobile-menu__link header-nav__link" href="">
           <svg class="mobile-menu__icon">
             <use href="./fonts/images/icons.svg#icon-favorite"></use>
           </svg>
-          Favorite
+          <span>Favorite</span>
           <svg class="mobile-menu__right-arrow">
             <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="">
+        <a class="mobile-menu__link header-nav__link" href="">
           <svg class="mobile-menu__icon">
             <use href="./fonts/images/icons.svg#icon-read"></use>
           </svg>
-          Read
+          <span>Read</span>
           <svg class="mobile-menu__right-arrow">
             <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
           </svg>
@@ -124,7 +127,7 @@
       </li>
     </ul>
     <!-- switcher -->
-    <div class="header__theme-select">
+    <div class="header__theme-select mobile">
       <p class="header__theme-select-light--on">Light</p>
       <svg class="header-checkbox__icon-light">
         <use href="./fonts/images/icons.svg#icon-sun"></use>

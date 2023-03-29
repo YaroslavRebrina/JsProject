@@ -2,7 +2,6 @@
 
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
 }
 
 .is-hidden {
@@ -28,10 +27,7 @@ body.is-fixed {
   align-items: center;
   // max-width: 480px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-
- 
+  padding: 16px 24px;
 }
 
 .header-nav__logo-link {
@@ -86,8 +82,6 @@ body.is-fixed {
 .header-nav {
   display: flex;
 
-  margin-top: 24px;
-  margin-bottom: 24px;
   text-decoration: none;
   align-items: baseline;
 
@@ -95,8 +89,6 @@ body.is-fixed {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 32px;
-    margin-bottom: 28px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -104,12 +96,8 @@ body.is-fixed {
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: 28px;
   }
 }
-
-
-
 
 a {
   text-decoration: none;
@@ -172,12 +160,12 @@ a {
     letter-spacing: 0.02em;
     color: var(--light-theme-text-color);
     border: none;
-    
+
     background: none;
     outline: none;
     // &:focus {
     //   color: #f4f4f4;
-      
+
     // }
 
     &:autofill,
@@ -222,19 +210,15 @@ button {
 }
 
 .search-field__btn {
- 
   @media screen and (max-width: $tablet) {
     color: var(--light-theme-text-color);
     transition: 0.4s;
-   
   }
 
   @media screen and (min-width: $tablet) {
     padding: 8px 19px 8px 14px;
-  
   }
 }
-
 
 // Checkbox
 
@@ -270,6 +254,16 @@ button {
   align-items: center;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+
+.header__theme-select.mobile {
+  margin-left: 0;
+  margin-top: auto;
+  margin-bottom: 18px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
   }
 }
 
@@ -394,16 +388,14 @@ svg {
   height: 21px;
 }
 
-
 // Momile-menu
 
-.mobile-button{
+.mobile-button {
   margin-left: 14px;
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
-
 
 .mobile-menu-container {
   position: fixed;
@@ -413,7 +405,6 @@ svg {
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: rgba(186, 67, 67, 0.6);
   transition: opacity 250ms var(--anim), visibility 250ms var(--anim);
   opacity: 1;
   &.is-hidden {
@@ -427,14 +418,32 @@ svg {
   }
 }
 
-.mobile-menu{
+.mobile-menu {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 0 16px;
   margin-left: auto;
-  background-color: var(--light-bg-color)
+  background-color: var(--light-bg-color);
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &:active {
+      background-color: var(--main-color-blue);
+      color: #f4f4f4;
+    }
+  }
+  &__icon {
+    margin-right: 14px;
+  }
+
+  &__right-arrow {
+    margin-left: auto;
+  }
+  /////////////////////////////////////////////////
 }
 
 .mobile-menu__button-close {
@@ -462,7 +471,13 @@ svg {
   }
 }
 
-.wrap{
+.wrap {
   margin-bottom: 74px;
   margin-top: 24px;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
