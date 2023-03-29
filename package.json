@@ -18,6 +18,7 @@
     "url": "https://github.com/YaroslavRebrina/js-project/issues"
   },
   "dependencies": {
+
     "@uvarov.frontend/vanilla-calendar": "^2.5.1",
     "accordion": "^3.0.2",
     "calendar-dates": "^2.7.2",

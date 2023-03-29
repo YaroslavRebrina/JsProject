@@ -13,3 +13,11 @@
   justify-content: center;
   align-items: stretch;
 }
+
+.card--opacity .card {
+  &__img,
+  &__title,
+  &__abstract {
+    opacity: 0.55;
+  }
+}
