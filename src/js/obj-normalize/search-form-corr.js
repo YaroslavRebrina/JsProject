@@ -2,7 +2,7 @@ import Notiflix from 'notiflix';
 import CardsApiService from './cards-servise-corr';
 // import { renderNormalize } from './render-normalize';
 
-const cardsApiService = new CardsApiService();
+export const cardsApiService = new CardsApiService();
 const searchForm = document.querySelector('#search-form');
 const submitBtn = document.querySelector('[type="submit"]');
 const gallery = document.querySelector('.card__list');
