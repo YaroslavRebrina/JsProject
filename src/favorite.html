@@ -2,9 +2,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Favorite</title>
+    <link rel="icon" href="./fonts/images/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="./fonts/images/favicon/icon.png" />
+    <link
+      rel="favicon-32x32"
+      type="image/png"
+      sizes="32x32"
+      href="./fonts/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="favicon-16x16"
+      type="image/png"
+      sizes="16x16"
+      href="./fonts/images/favicon/favicon-16x16.png"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/listOfFavorites.js"></script>
   </head>
   <body class="favorite">
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -12,18 +26,20 @@
     <main>
       <section>
         <div class="container">
-          <ul class="card__list">
-            <img
-              width="400px"
-              class="favorite__error"
-              src="../src/fonts/images/desktop/desktop.png"
-              alt="no news added"
-            />
+          <ul class="favorite__list">
+            <li class="favorite__error">
+              <p class="underfined___title">
+                We haven't found any favorite news from you
+              </p>
+              <img
+                width="400px"
+                src="../src/fonts/images/desktop/desktop.png"
+                alt="no news added"
+              />
+            </li>
           </ul>
         </div>
       </section>
-      <include src="./partials/pagination.html"></include>
     </main>
-    <include src="./partials/footer.html"></include>
   </body>
 </html>

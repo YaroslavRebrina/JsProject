@@ -1,5 +1,5 @@
 import { FAVORITE_KEY, FAVORITE_TOTAL, RENDERED } from './constants';
-import { dataForFavorite } from './pagination/paginationByPopular';
+// import { dataForFavorite } from './pagination/paginationByPopular';
 import { card } from './card';
 
 import sprite from '../fonts/images/icons.svg';
@@ -19,14 +19,46 @@ listRef.addEventListener('click', toggleFavorite);
 favoriteMarkup(getFavorites());
 
 function toggleFavorite(evt) {
-  if (
-    evt.target.nodeName === 'BUTTON' &&
-    !evt.target.classList.contains('liked')
-  ) {
-    addToFavourites(evt);
-  } else {
-    removeFavourite(evt);
+  if (evt.target.nodeName === 'BUTTON')
+    if (!evt.target.classList.contains('liked')) {
+      addToFavourites(evt);
+    } else {
+      removeFavourite(evt);
+    }
+
+  if (evt.target.classList.contains('card__read')) {
+    addToReads(evt);
   }
+}
+
+function addToReads(evt) {
+  const addedToRead = JSON.parse(localStorage.getItem(RENDERED)).find(
+    item => item.id === evt.target.closest('li').id
+  );
+  const elemOpacity = evt.target.closest('li');
+  elemOpacity.classList.add('card--opacity');
+
+  const elem = evt.target.closest('li').querySelector('.card__already');
+
+  elem.classList.remove('card__already--false');
+
+  let searchBool = false;
+
+  favouriteNews.forEach(item => {
+    if (item.id === addedToRead.id) {
+      item.isRead = true;
+      searchBool = true;
+    }
+  });
+
+  if (!searchBool) {
+    addedToRead.isRead = true;
+    favouriteNews.push(addedToRead);
+  }
+
+  localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
+
+  return;
 }
 
 function addToFavourites(evt) {
@@ -44,15 +76,26 @@ function addToFavourites(evt) {
 
   evt.target.classList.add('liked');
 
-  addedToFavorite.isFavorite = true;
-  favouriteNews.push(addedToFavorite);
+  let searchBool = false;
+
+  favouriteNews.forEach(item => {
+    if (item.id === addedToFavorite.id) {
+      item.isFavorite = true;
+      searchBool = true;
+    }
+  });
+
+  if (!searchBool) {
+    addedToFavorite.isFavorite = true;
+    favouriteNews.push(addedToFavorite);
+  }
+
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
-  console.log(favouriteNews);
+
   return;
 }
 
 function removeFavourite(evt) {
-  console.log(evt.target);
   const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
     item => item.id === evt.target.closest('li').id
   );
@@ -64,7 +107,17 @@ function removeFavourite(evt) {
       </span>`;
   evt.target.classList.remove('liked');
   addedToFavorite.isFavorite = false;
-  favouriteNews.filter(item => !addedToFavorite);
+
+  favouriteNews.forEach(item => {
+    if (item.id != addedToFavorite.id) return;
+
+    item.isFavorite = addedToFavorite.isFavorite;
+  });
+
+  favouriteNews = favouriteNews.filter(
+    item => item.isFavorite === true || item.isRead === true
+  );
+
   localStorage.setItem(FAVORITE_KEY, JSON.stringify(favouriteNews));
 
   if (document.body.classList.contains('favorite')) {
@@ -91,5 +144,3 @@ export function favoriteMarkup(callback) {
     console.log(error.message);
   }
 }
-
-//closest or stop paitaintion if target `li`

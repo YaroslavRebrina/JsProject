@@ -1,146 +1,145 @@
 <header class="header">
-  <div class="container backdrop">
-    <div class="header__wrapper">
-      <nav class="header-nav">
-        <a class="header-nav__logo-link" 
-          href="./index.html" 
-          rel="noopener noreferrer"
-          >News</a>
-        <ul class="header-nav__list">
-          <li class="header-nav__list-item">
-            <a class="header-nav__link" 
-              href="./index.html" 
-              rel="noopener noreferrer"
-              >Home</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a class="header-nav__link" 
-              href="./favorite.html" 
-              rel="noopener noreferrer"
-              >Favorite</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a class="header-nav__link" 
-              href="./read.html" 
-              rel="noopener noreferrer"
-              >Read</a>
-          </li>
-        </ul>
-        <form id="search-form">
-          <label for="header-label__input">
-            <svg class="header-input__icon">
-              <use href="./fonts/images/icons.svg#icon-search"></use>
-            </svg>
-            <input class="header-input" type="text" name="search" placeholder="Search  |" />
-          </label>
-        </form>
-      </nav>
-      <div class="modal">
-        <nav class="modal-nav">
-          <ul class="modal-nav__list">
-            <li class="modal-nav__sub-list">
-              <ul class="modal-mobile-list">
-                <li class="modal-icon-item">
-                  <svg class="modal__link-icon">
-                    <use href="./fonts/images/icons.svg#icon-home"></use>
-                  </svg>
-                </li>
-                <li class="modal-nav__list-item">
-                  <a class="modal-nav__link" href="./index.html" rel="noopener noreferrer">Home</a>
-                </li>
-                <li class="modal__link-icon-arrow">
-                  <svg class="modal__link-svg-arrow">
-                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="modal-nav__sub-list">
-              <ul class="modal-mobile-list">
-                <li class="modal__link-icon-item">
-                  <svg class="modal__link-icon">
-                    <use href="./fonts/images/icons.svg#icon-favorite"></use>
-                  </svg>
-                </li>
-                <li class="modal-nav__list-item">
-                  <a class="modal-nav__link" href="./favorite.html" rel="noopener noreferrer">Favorite</a>
-                </li>
-                <li class="modal__link-icon-arrow">
-                  <svg class="modal__link-svg-arrow">
-                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="modal-nav__sub-list">
-              <ul class="modal-mobile-list">
-                <li class="modal__link-icon-item">
-                  <svg class="modal__link-icon">
-                    <use href="./fonts/images/icons.svg#icon-read"></use>
-                  </svg>
-                </li>
-                <li class="modal-nav__list-item">
-                  <a class="modal-nav__link" href="./read.html" rel="noopener noreferrer">Read</a>
-                </li>
-                <li class="modal__link-icon-arrow">
-                  <svg class="modal__link-svg-arrow">
-                    <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="modal__theme-select">
-          <svg class="modal-checkbox__icon-light">
-            <use href="./fonts/images/icons.svg#icon-sun"></use>
-          </svg>
-          <label class="modal__switch">
-            <input type="checkbox" class="switch-checkbox" />
-            <span class="modal__slider modal__slider-round"></span>
-          </label>
-          <svg class="modal-checkbox__icon-dark">
-            <use href="./fonts/images/icons.svg#icon-moon"></use>
-          </svg>
-        </div>
-        <ul class="modal__button-list">
-          <li class="modal__button-list--search">
-            <button class="modal__button-search">
-              <svg class="modal__mobile-icon-search">
-                <use href="./fonts/images/icons.svg#icon-search"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="modal__button-list--menu">
-            <button class="modal__button-menu">
-              <svg class="modal__burger-menu-icon">
-                <use href="./fonts/images/icons.svg#icon-menu"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="modal__button-list--close">
-            <button class="modal__button-close">
-              <svg class="modal__burger-menu-close">
-                <use href="./fonts/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div class="header__theme-select">
-        <p class="header__theme-select-light--on">Light</p>
-        <svg class="header-checkbox__icon-light">
-          <use href="./fonts/images/icons.svg#icon-sun"></use>
+  <div class="header__wrapper">
+    <nav class="header-nav">
+      <a
+        class="header-nav__logo-link"
+        href="./index.html"
+        rel="noopener noreferrer"
+        >News</a
+      >
+      <ul class="header-nav__list">
+        <li class="header-nav__list-item">
+          <a
+            class="header-nav__link"
+            href="./index.html"
+            rel="noopener noreferrer"
+            >Home</a
+          >
+        </li>
+        <li class="header-nav__list-item">
+          <a
+            class="header-nav__link"
+            href="./favorite.html"
+            rel="noopener noreferrer"
+            >Favorite</a
+          >
+        </li>
+        <li class="header-nav__list-item">
+          <a
+            class="header-nav__link"
+            href="./read.html"
+            rel="noopener noreferrer"
+            >Read</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <form class="search-field" id="search-form">
+      <button type="button" class="search-field-btn">
+        <svg class="header-input__icon">
+          <use href="./fonts/images/icons.svg#icon-search"></use>
         </svg>
-        <label class="header__switch">
-          <input type="checkbox" class="switch-checkbox" />
-          <span class="header__slider header__slider-round"></span>
-        </label>
-        <svg class="header-checkbox__icon-dark">
-          <use href="./fonts/images/icons.svg#icon-moon"></use>
-        </svg>
-        <p class="header__theme-select-dark--off">Dark</p>
-      </div>
+      </button>
+      <input
+        class="header-input"
+        type="text"
+        name="search"
+        placeholder="Search"
+      />
+    </form>
+
+    <div class="header__theme-select">
+      <p class="header__theme-select-light--on">Light</p>
+      <svg class="header-checkbox__icon-light">
+        <use href="./fonts/images/icons.svg#icon-sun"></use>
+      </svg>
+      <label class="header__switch">
+        <input type="checkbox" class="switch-checkbox" />
+        <span class="header__slider header__slider-round"></span>
+      </label>
+      <svg class="header-checkbox__icon-dark">
+        <use href="./fonts/images/icons.svg#icon-moon"></use>
+      </svg>
+      <p class="header__theme-select-dark--off">Dark</p>
     </div>
+    <button type="button" class="js-open-menu mobile-button" data-menu-open>
+      <svg class="header-input__icon">
+        <use href="./fonts/images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
+
+<!-- mobile menu -->
+
+<div
+  class="mobile-menu-container js-menu-container is-hidden"
+  id="mobile-menu"
+  data-menu
+>
+  <div class="mobile-menu">
+    <div class="wrap">
+      <a class="mobile-logo header-nav__logo-link" href="">News</a>
+      <button
+        class="mobile-menu__button-close js-close-menu"
+        data-menu-close-mob
+      >
+        <svg class="mobile-menu-button__icon">
+          <use href="./fonts/images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link header-nav__link" href="">
+          <svg class="mobile-menu__icon">
+            <use href="./fonts/images/icons.svg#icon-home"></use>
+          </svg>
+          <span>Home</span>
+          <svg class="mobile-menu__right-arrow">
+            <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link header-nav__link" href="">
+          <svg class="mobile-menu__icon">
+            <use href="./fonts/images/icons.svg#icon-favorite"></use>
+          </svg>
+          <span>Favorite</span>
+          <svg class="mobile-menu__right-arrow">
+            <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link header-nav__link" href="">
+          <svg class="mobile-menu__icon">
+            <use href="./fonts/images/icons.svg#icon-read"></use>
+          </svg>
+          <span>Read</span>
+          <svg class="mobile-menu__right-arrow">
+            <use href="./fonts/images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <!-- switcher -->
+    <div class="header__theme-select mobile">
+      <p class="header__theme-select-light--on">Light</p>
+      <svg class="header-checkbox__icon-light">
+        <use href="./fonts/images/icons.svg#icon-sun"></use>
+      </svg>
+      <label class="header__switch">
+        <input type="checkbox" class="switch-checkbox" />
+        <span class="header__slider header__slider-round"></span>
+      </label>
+      <svg class="header-checkbox__icon-dark">
+        <use href="./fonts/images/icons.svg#icon-moon"></use>
+      </svg>
+      <p class="header__theme-select-dark--off">Dark</p>
+    </div>
+  </div>
+</div>

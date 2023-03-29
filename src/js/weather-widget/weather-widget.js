@@ -79,12 +79,12 @@ function showWeather(markup) {
   };
 
   if (mediaList.mobile.matches) {
-    console.log(refs.listItems);
+    // console.log(refs.listItems);
     checkScreenSize(markup, refs);
     return refs.listItems[0].insertAdjacentHTML('beforebegin', markup);
   }
   if (mediaList.tablet.matches) {
-    console.log(refs.listItems);
+    // console.log(refs.listItems);
     checkScreenSize(markup, refs);
     return refs.listItems[1].insertAdjacentHTML('beforebegin', markup);
   }
