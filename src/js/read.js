@@ -1,6 +1,6 @@
 import { card } from './card/index';
 import { FAVORITE_KEY } from './constants';
-
+import './switcher';
 try {
   const readContainer = document.querySelector('.card__list');
   const readError = document.querySelector('.read__error');
@@ -57,3 +57,4 @@ try {
 } catch (error) {
   console.log(error);
 }
+const mobileMenuOpen = document.querySelector('.header-input__icon');

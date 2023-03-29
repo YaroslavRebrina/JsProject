@@ -12,9 +12,11 @@ const { listRef, buttonRef, favListRef } = refs;
 
 export let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 // let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
-
-listRef.addEventListener('click', toggleFavorite);
-// listRef.addEventListener('click', removeFavourite);
+try {
+  listRef.addEventListener('click', toggleFavorite);
+} catch (error) {
+  console.log(error.message);
+}
 
 favoriteMarkup(getFavorites());
 

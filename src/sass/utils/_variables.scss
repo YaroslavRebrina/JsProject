@@ -6,8 +6,16 @@
   --light-theme-text-color: #111321;
   --dark-theme-text-color: #f4f4f4;
   --date-color: #a8a8a8;
-
+  --light-theme: #111321;
   //theme colors
+  body.dark-mode {
+    --light-bg-color: #2e2e2e;
+    --light-theme: #fff;
+    .mobile-menu-button__icon {
+      fill: #fff;
+      margin-top: 30px;
+    }
+  }
   --light-bg-color: #ffffff;
   --dark-bg-color: #686868;
 

@@ -1,6 +1,7 @@
 import { card } from './card/index';
 import { FAVORITE_KEY } from './constants';
-
+import './switcher';
+import './favorite';
 try {
   const favoriteContainer = document.querySelector('.favorite__list');
   const favoriteError = document.querySelector('.favorite__error');

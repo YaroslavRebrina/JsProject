@@ -34,19 +34,8 @@
   margin: 0 auto;
   padding: 32px 0;
 
-  & img {
-    margin: 53px auto 40px;
-    width: 128px;
-    height: 121px;
-  }
-
   @media screen and (min-width: $tablet) {
     padding: 40px 0;
-    & img {
-      margin: 90px auto;
-      width: 165px;
-      height: 156px;
-    }
   }
 }
 
@@ -84,24 +73,16 @@
   position: relative;
   font-size: 55px;
   margin-right: 12px;
-  &::after {
-    position: absolute;
-    width: 63px;
-    height: 0;
-    content: '';
-    border: 1px solid #ffffff;
-    left: 30px;
-    bottom: 32px;
-    transform: rotate(90deg);
-  }
+
+  border-right-color: #ffffff;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-right: 12px;
+
   @media screen and (min-width: $tablet) {
     font-size: 64px;
     margin-right: 16px;
-    &::after {
-      width: 81px;
-      left: 30px;
-      bottom: 35px;
-    }
+
   }
 }
 .description {
