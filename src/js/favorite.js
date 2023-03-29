@@ -10,7 +10,7 @@ const refs = {
 };
 const { listRef, buttonRef, favListRef } = refs;
 
-let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
+export let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 // let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 
 listRef.addEventListener('click', toggleFavorite);
