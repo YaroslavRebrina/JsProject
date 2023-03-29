@@ -1,31 +1,43 @@
-    <div class="calendar container" id="calendar">
-      <label for="start" class="search">Search date news</label>
-
-      <form action="#" class="form flatpickr-input">
-        <div class="flatpickr">
-          <a
-            class="input-button input-button-calendar"
-            aria-hidden="true"
-            title="toggle"
-            data-toggle
-          >
-            <svg class="icon-calendar" width="" height="" viewbox="">
-              <use href="/src/fonts/images/icons.svg#icon-calendar"></use>
-            </svg>
-          </a>
-          <input class="form-control flatpickr-input" type="datetime-local" placeholder="" />
-         <a
-            class="icon-button icon-button-calendar"
-            aria-hidden="true"
-            title="toggle"
-            data-toggle
-          >
-          <svg class="icon-arrow-down" width="" height="" viewbox="">
-            <use href="/src/fonts/images/icons.svg#icon-arrow-down"></use>
-          </svg>
-        </div>        
-      </form>
+<div class="calendar__wrap container">
+  <form class="calendar__form">
+    <label class="calendar__label" for="input-datepicker"
+      >Search date news</label
+    >
+    <div class="calendar__input flatpickr" id="calendar">
+      <input
+        class="flatpickr-input"
+        type="text"
+        id="input-flatpickr"
+        placeholder="Select date"
+        data-input
+      />
+      <a
+        class="input-button calendar__button calendar__button--left"
+        title="toggle"
+        data-toggle
+      >
+        <svg class="calendar__icon icon-calendar" width="17" height="17">
+          <use href="/src/fonts/images/icons.svg#icon-calendar"></use>
+        </svg>
+      </a>
+      <a
+        class="input-button calendar__button calendar__button--right arrow-down"
+        title="open"
+        data-open
+      >
+        <svg class="calendar__icon icon-open" width="9" height="15">
+          <use href="/src/fonts/images/icons.svg#icon-arrow-down"></use>
+        </svg>
+      </a>
+      <a
+        class="input-button calendar__button calendar__button--right arrow-up is-hidden"
+        title="close"
+        data-close
+      >
+        <svg class="calendar__icon icon-close" width="9" height="15">
+          <use href="/src/fonts/images/icons.svg#icon-arrow-up"></use>
+        </svg>
+      </a>
     </div>
-
-
-
+  </form>
+</div>

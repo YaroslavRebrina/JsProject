@@ -1,3 +1,4 @@
+import './js/calendar';
 import './js/cards-service';
 import './js/categories';
 
