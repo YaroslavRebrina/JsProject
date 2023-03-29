@@ -83,6 +83,7 @@ function handleCategoriesClick(e) {
           categoryName.toLowerCase().trim()
         );
         cardsApiService.fetchSearchByCategories().then(data => {
+          console.log(data);
           const news = objNormalize(data);
           const newsArr = news.map(item => card(item));
           const pageCount = Math.ceil(news.length / PAGE_SIZE);

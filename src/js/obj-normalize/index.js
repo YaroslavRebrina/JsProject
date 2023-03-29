@@ -53,7 +53,7 @@ function objCardNormalize(objItem) {
   dataCard.category = objItem.section || objItem.section_name;
 
   //Заголовок
-  dataCard.title = objItem.title || objItem.headline.main;
+  dataCard.title = objItem.title;
 
   //Короткий опис новини
   dataCard.abstract = objItem.abstract;

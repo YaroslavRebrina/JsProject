@@ -25,7 +25,7 @@ body.is-fixed {
 .header__wrapper {
   display: flex;
   align-items: center;
-  // max-width: 480px;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 16px 24px;
 }
@@ -37,7 +37,7 @@ body.is-fixed {
   font-size: 24px;
   line-height: 33px;
 
-  color: var(--light-theme-text-color);
+  color: var(--light-theme);
 
   @media screen and (max-width: 767px) {
     margin-right: 14px;
@@ -53,7 +53,9 @@ body.is-fixed {
     line-height: 57px;
   }
 }
-
+.mobile-menu-button__icon {
+  margin-top: 30px;
+}
 .header-nav__link {
   font-family: var(--font-family-main);
   font-style: normal;
@@ -137,7 +139,6 @@ a {
   display: flex;
   background-color: transparent;
   height: 31px;
-
   @media screen and (min-width: $tablet) {
     border: 1px solid var(--light-theme-text-color);
     border-radius: 20px;
@@ -240,6 +241,7 @@ button {
 
 .header-checkbox__icon-dark {
   display: none;
+  fill: transparent;
 
   @media screen and (max-width: 1279px) {
     display: block;
@@ -480,4 +482,7 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.header-page--currnet {
+  color: var(--main-color-blue);
 }

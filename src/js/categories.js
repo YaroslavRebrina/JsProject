@@ -4,7 +4,9 @@ const selected = document.querySelector('.js-selected');
 const optionsContainer = document.querySelector('.js-container');
 const categoriesList = document.querySelector('.js-categories');
 const optionsList = document.querySelectorAll('.js-option');
-
+const categoriesButton = document.querySelector(
+  '.select-box .options-container'
+);
 const cardsApiService = new CardsApiService();
 
 const mediaList = {
@@ -120,3 +122,9 @@ function appendCategoriesButtonsMarkup(data) {
 // selected.addEventListener('click', () => {
 //   optionsContainer.classList.add('active');
 // });
+selected.addEventListener('click', () => {
+  categoriesButton.style.opacity = '1';
+});
+optionsContainer.addEventListener('mouseleave', e => {
+  categoriesButton.style.opacity = '0';
+});
