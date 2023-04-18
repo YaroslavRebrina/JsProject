@@ -3,12 +3,12 @@ import { favouriteNews } from './favorite';
 import { cardsApiService } from './obj-normalize/search-form-corr';
 import { favoriteMarkup, getFavorites } from './favorite';
 
-// const FLATPICKR_INPUT = document.querySelector('.flatpickr-input');
-// const ARROW_BTN_DOWN = document.querySelector('.arrow-down');
-// const ARROW_BTN_UP = document.querySelector('.arrow-up');
-// const CALENDAR_ICON = document.querySelector('.calendar__button--left');
+const FLATPICKR_INPUT = document.querySelector('.flatpickr-input');
+const ARROW_BTN_DOWN = document.querySelector('.arrow-down');
+const ARROW_BTN_UP = document.querySelector('.arrow-up');
+const CALENDAR_ICON = document.querySelector('.calendar__button--left');
 const CARDS_LIST = document.querySelector('.cards__list');
-const ICONS_URL = new URL('/img/icons.svg');
+const ICONS_URL = './img/icons.svg';
 const pag = document.querySelector('.pagination');
 
 let requestDate;
@@ -52,12 +52,12 @@ const DATEPICKER_OPTIONS = {
 
 const FLATPICKR = flatpickr('#calendar', DATEPICKER_OPTIONS);
 
-// function changeBtnStyles() {
-//   FLATPICKR_INPUT.classList.toggle('is-clicked');
-//   ARROW_BTN_DOWN.classList.toggle('is-hidden');
-//   ARROW_BTN_UP.classList.toggle('is-hidden');
-//   CALENDAR_ICON.classList.toggle('is-clicked');
-// }
+function changeBtnStyles() {
+  FLATPICKR_INPUT.classList.toggle('is-clicked');
+  ARROW_BTN_DOWN.classList.toggle('is-hidden');
+  ARROW_BTN_UP.classList.toggle('is-hidden');
+  CALENDAR_ICON.classList.toggle('is-clicked');
+}
 
 function formatRequestDate(dateObj) {
   const [fullDate] = dateObj;
