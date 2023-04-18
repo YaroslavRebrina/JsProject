@@ -14,6 +14,7 @@ export let favouriteNews = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || [];
 // let colletionTotal = JSON.parse(localStorage.getItem(FAVORITE_TOTAL)) || 0;
 try {
   listRef.addEventListener('click', toggleFavorite);
+  favListRef.addEventListener('click', toggleFavorite);
 } catch (error) {
   console.log(error.message);
 }
@@ -67,7 +68,7 @@ function addToFavourites(evt) {
   const addedToFavorite = JSON.parse(localStorage.getItem(RENDERED)).find(
     item => item.id === evt.target.closest('li').id
   );
-
+  evt.target.classList.add('liked');
   evt.target.closest(
     'button'
   ).innerHTML = `<span class="span--test"> Remove from favorite
@@ -75,8 +76,6 @@ function addToFavourites(evt) {
           <use href="${sprite}#icon-like-active"></use>
         </svg>
       </span>`;
-
-  evt.target.classList.add('liked');
 
   let searchBool = false;
 

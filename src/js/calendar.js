@@ -76,16 +76,17 @@ function formatFilterDate(dateObj) {
 
 function filterByDatePopular(filterDate, articlesArray) {
   const filtredArticles = articlesArray.filter(
-    article => article.published_date === filterDate
+    article => article.date === filterDate
   );
   return filtredArticles;
 }
 
 function filterByDateCategory(filterDate, articlesArray) {
+  console.log(articlesArray);
   const filtredArticles = articlesArray.filter(
-    article => article.published_date.slice(0, 10) === filterDate
+    article => article.date.slice(0, 10) === filterDate
   );
-  // console.log('filtred articles', filtredArticles);
+
   return filtredArticles;
 }
 
